@@ -1,0 +1,17 @@
+{
+  "name": "solhire-indexer",
+  "version": "1.0.0",
+  "description": "Event Indexer and Realtime Orchestrator for SolHire Marketplace",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.17.0",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^5.0.0"
+  }
+}

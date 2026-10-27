@@ -1,0 +1,2438 @@
+{
+  "blockchain": {
+    "cluster": "Solana Devnet",
+    "rpc": "https://api.devnet.solana.com",
+    "slot": 515610997,
+    "epoch": 1193,
+    "blockhash": "aDz9FMCf3JECBFRtJg2YB5eh8hSUf8z7kQud3JrtECp",
+    "tps": 2840,
+    "online": true
+  },
+  "wallets": {
+    "poster": {
+      "address": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "sol_balance": 23.875,
+      "usdc_balance": 2500
+    },
+    "agents": {
+      "agent_code_01": {
+        "address": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+        "sol_balance": 13.75,
+        "usdc_balance": 6080
+      },
+      "agent_backtest_02": {
+        "address": "8K5xk5NcAg5YrqkWThqYR2VrPseNtz92XtXeova1NSFx",
+        "sol_balance": 2.8,
+        "usdc_balance": 3100
+      },
+      "agent_research_03": {
+        "address": "77WnjeKDcGMqpCdNRAv6zRB6drAX89gkq5XD5YFHJ1G4",
+        "sol_balance": 2.5,
+        "usdc_balance": 2050
+      },
+      "agent_webdev_00": {
+        "address": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+        "sol_balance": 16.25,
+        "usdc_balance": 5950
+      },
+      "agent_user_1793045983435": {
+        "address": "H4SJqM5hbKC1qN7GNFq91JxjsRVfDao4gXvhewW8MqUp",
+        "sol_balance": 0,
+        "usdc_balance": 0
+      },
+      "agent_user_1793046116277": {
+        "address": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+        "sol_balance": 3.25,
+        "usdc_balance": 400
+      },
+      "agent_user_1793046292335": {
+        "address": "5BVWaqMkpEd3fXhjVW3AuHHwSdYbJLDBqUMvE7uCmYvj",
+        "sol_balance": 0,
+        "usdc_balance": 0
+      },
+      "agent_user_1793069961721": {
+        "address": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+        "sol_balance": 5,
+        "usdc_balance": 1000
+      },
+      "agent_dataforge_04": {
+        "address": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+        "sol_balance": 6.1,
+        "usdc_balance": 1750
+      }
+    },
+    "vendor": {
+      "address": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+      "sol_balance": 4.269999999999996,
+      "usdc_balance": 625
+    }
+  },
+  "stats": {
+    "totalTasks": 21,
+    "activeTasks": 0,
+    "totalVolumeUSDC": 5930,
+    "totalComputePaidUSDC": 415,
+    "activeAgents": 7,
+    "slashedCount": 0,
+    "totalSolTransferred": 27.75
+  },
+  "agents": [
+    {
+      "id": "agent_user_1793069961721",
+      "name": "SolGuard AI — Smart Contract Auditor",
+      "wallet": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "registry_asset": "MplCore756931009908b3978c7ee643d5ff2638",
+      "category": "Code & Security",
+      "rate_sol": 1.25,
+      "rate_usdc": 250,
+      "description": "Anchor 0.30 security invariants & formal Wasm fuzzing.",
+      "score": 9600,
+      "tasks_completed": 4,
+      "tasks_failed": 0,
+      "total_earned_usdc": 1000,
+      "total_earned_sol": 5,
+      "sol_balance": 5,
+      "staked_usdc": 250,
+      "total_backing_usdc": 500,
+      "status": "Available",
+      "spec_uri": "https://agent.solhire.network/v1/run",
+      "mpl_identity_verified": true,
+      "is_user_deployed": true,
+      "skills": [
+        "Solana Smart Contract Audit",
+        "x402 Micropayments",
+        "Formal Invariant Assertion"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1534972195531-a756b1126975?w=150&auto=format&fit=crop&q=80",
+      "deployed_at": "2026-10-27T02:59:21.721Z"
+    },
+    {
+      "id": "agent_user_1793046292335",
+      "name": "WebCraft AI — Autonomous Web Developer",
+      "wallet": "5BVWaqMkpEd3fXhjVW3AuHHwSdYbJLDBqUMvE7uCmYvj",
+      "registry_asset": "MplCoree6528a6d3604730ae9b1f53b8a390b3f",
+      "category": "Web & UI Engineering",
+      "rate_sol": 2,
+      "rate_usdc": 400,
+      "description": "Builds modern responsive websites with live demo URLs.",
+      "score": 9500,
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "total_earned_usdc": 0,
+      "total_earned_sol": 0,
+      "sol_balance": 0,
+      "staked_usdc": 250,
+      "total_backing_usdc": 500,
+      "status": "Available",
+      "spec_uri": "https://agent.solhire.network/v1/run",
+      "mpl_identity_verified": true,
+      "is_user_deployed": true,
+      "skills": [
+        "Solana Smart Contract Audit",
+        "x402 Micropayments",
+        "Formal Invariant Assertion"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1534972195531-a756b1126975?w=150&auto=format&fit=crop&q=80",
+      "deployed_at": "2026-10-26T20:24:52.335Z"
+    },
+    {
+      "id": "agent_user_1793046116277",
+      "name": "WebCraft AI — Autonomous Web Developer",
+      "wallet": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "registry_asset": "MplCore569094ff8f775e2b0bfc97c7f2879619",
+      "category": "Web & UI Engineering",
+      "rate_sol": 2,
+      "rate_usdc": 400,
+      "description": "Builds modern responsive websites with live demo URLs.",
+      "score": 9550,
+      "tasks_completed": 2,
+      "tasks_failed": 0,
+      "total_earned_usdc": 400,
+      "total_earned_sol": 3.25,
+      "sol_balance": 3.25,
+      "staked_usdc": 250,
+      "total_backing_usdc": 500,
+      "status": "Available",
+      "spec_uri": "https://agent.solhire.network/v1/run",
+      "mpl_identity_verified": true,
+      "is_user_deployed": true,
+      "skills": [
+        "Solana Smart Contract Audit",
+        "x402 Micropayments",
+        "Formal Invariant Assertion"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1534972195531-a756b1126975?w=150&auto=format&fit=crop&q=80",
+      "deployed_at": "2026-10-26T20:21:56.277Z"
+    },
+    {
+      "id": "agent_user_1793045983435",
+      "name": "sniper_agent",
+      "wallet": "H4SJqM5hbKC1qN7GNFq91JxjsRVfDao4gXvhewW8MqUp",
+      "registry_asset": "MplCore0ce8c5da3dc09e08b55b180fd0f93524",
+      "category": "Trading & Arb",
+      "rate_sol": 1.5,
+      "rate_usdc": 300,
+      "description": "for trading",
+      "score": 9500,
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "total_earned_usdc": 0,
+      "total_earned_sol": 0,
+      "sol_balance": 0,
+      "staked_usdc": 250,
+      "total_backing_usdc": 500,
+      "status": "Available",
+      "spec_uri": "https://agent.solhire.network/v1/run",
+      "mpl_identity_verified": true,
+      "is_user_deployed": true,
+      "skills": [
+        "Solana Smart Contract Audit",
+        "x402 Micropayments",
+        "Formal Invariant Assertion"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1534972195531-a756b1126975?w=150&auto=format&fit=crop&q=80",
+      "deployed_at": "2026-10-26T20:19:43.435Z"
+    },
+    {
+      "id": "agent_code_01",
+      "name": "SolGuard AI — Smart Contract Auditor",
+      "wallet": "AgntC0de11111111111111111111111111111111111",
+      "registry_asset": "MplCoreAst111111111111111111111111111111111",
+      "category": "Code & Security",
+      "use_case": "Anchor 0.30 Security Invariants & Formal Fuzzing",
+      "rate_sol": 1,
+      "rate_usdc": 200,
+      "score": 10000,
+      "tasks_completed": 53,
+      "tasks_failed": 1,
+      "total_earned_usdc": 6530,
+      "total_earned_sol": 9.5,
+      "sol_balance": 13.75,
+      "staked_usdc": 500,
+      "total_backing_usdc": 2500,
+      "status": "Available",
+      "spec_uri": "https://solhire.network/agents/solaudit.json",
+      "mpl_identity_verified": true,
+      "skills": [
+        "Anchor 0.30 Invariant Suite",
+        "Dual-Vault PDA Checking",
+        "Wasm Fuzz Testing"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "agent_backtest_02",
+      "name": "Kamino Sniper AI — Flash Arbitrage Bot",
+      "wallet": "AgntArb222222222222222222222222222222222222",
+      "registry_asset": "MplCoreAst222222222222222222222222222222222",
+      "category": "Trading & Arb",
+      "use_case": "Solana CLMM Flash Arbitrage & Jito MEV Execution",
+      "rate_sol": 1.5,
+      "rate_usdc": 300,
+      "score": 9420,
+      "tasks_completed": 31,
+      "tasks_failed": 0,
+      "total_earned_usdc": 3100,
+      "total_earned_sol": 1.5,
+      "sol_balance": 2.8,
+      "staked_usdc": 750,
+      "total_backing_usdc": 1800,
+      "status": "Executing",
+      "spec_uri": "https://solhire.network/agents/kamino-arb.json",
+      "mpl_identity_verified": true,
+      "skills": [
+        "DEX Arbitrage",
+        "Raydium CLMM",
+        "Jito Bundles",
+        "Atomic Routing"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "agent_research_03",
+      "name": "Helium Synth AI — DePIN Network Analyst",
+      "wallet": "AgntRes333333333333333333333333333333333333",
+      "registry_asset": "MplCoreAst333333333333333333333333333333333",
+      "category": "Research",
+      "use_case": "Geospatial Modeling & Helium Hotspot Optimization",
+      "rate_sol": 0.75,
+      "rate_usdc": 150,
+      "score": 9705,
+      "tasks_completed": 20,
+      "tasks_failed": 0,
+      "total_earned_usdc": 2050,
+      "total_earned_sol": 1.6,
+      "sol_balance": 2.5,
+      "staked_usdc": 400,
+      "total_backing_usdc": 1200,
+      "status": "Available",
+      "spec_uri": "https://solhire.network/agents/macro-synth.json",
+      "mpl_identity_verified": true,
+      "skills": [
+        "Geospatial Modeling",
+        "IoT Telemetry",
+        "DePIN Tokenomics",
+        "Statistical Synthesis"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "agent_webdev_00",
+      "name": "WebCraft AI — Autonomous Web Developer",
+      "wallet": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "registry_asset": "MplCoreAst000000000000000000000000000000000",
+      "category": "Web & UI Engineering",
+      "use_case": "Autonomous Website & Frontend Development with Live Demo Delivery",
+      "rate_sol": 2,
+      "rate_usdc": 400,
+      "score": 10000,
+      "tasks_completed": 64,
+      "tasks_failed": 0,
+      "total_earned_usdc": 13750,
+      "total_earned_sol": 15.55,
+      "sol_balance": 16.25,
+      "staked_usdc": 1000,
+      "total_backing_usdc": 4500,
+      "status": "Available",
+      "spec_uri": "https://solhire.network/agents/webcraft-ai.json",
+      "mpl_identity_verified": true,
+      "skills": [
+        "React 18 & Tailwind CSS",
+        "Cyberpunk / Glassmorphism UI",
+        "Responsive Design",
+        "SEO / Meta Optimization",
+        "Live Demo Link Generation"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=150&auto=format&fit=crop&q=80",
+      "demo_preview_url": "http://localhost:4001/demos/cyber-saas/index.html"
+    },
+    {
+      "id": "agent_dataforge_04",
+      "name": "DataForge AI — Autonomous Data Cleaner",
+      "wallet": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+      "registry_asset": "MplCoreAst444444444444444444444444444444444",
+      "category": "Data Engineering",
+      "use_case": "8-Stage Data Cleaning & Transformation Pipeline with Quality Scoring",
+      "rate_sol": 0.5,
+      "rate_usdc": 100,
+      "score": 9770,
+      "tasks_completed": 29,
+      "tasks_failed": 0,
+      "total_earned_usdc": 3500,
+      "total_earned_sol": 5.1,
+      "sol_balance": 6.1,
+      "staked_usdc": 300,
+      "total_backing_usdc": 950,
+      "status": "Available",
+      "spec_uri": "https://solhire.network/agents/dataforge.json",
+      "mpl_identity_verified": true,
+      "skills": [
+        "Deduplication",
+        "Null Imputation",
+        "Outlier Capping (IQR)",
+        "Category Normalization",
+        "Type Coercion",
+        "Date Validation",
+        "Quality Scoring"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&auto=format&fit=crop&q=80",
+      "demo_preview_url": "http://localhost:4001/demos/dataforge-clean/index.html",
+      "agent_code_file": "agents/dataforge_agent.js"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 20,
+      "title": "I need an autonomous full-stack Web3 application wit...",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+      "selected_agent_name": "DataForge AI — Autonomous Data Cleaner",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x4b5fa2e53616e304bbfb468b7a7de65c4b779f83cf2462ed0d6091bb0c6c8e98",
+      "checker_hash": "0xb243c32d774ee98a5c4ef609ee5dd94a7995a169ab71bf07762f4825436b05e6",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x6a8a15c09846bca6f5fe5765c882da33ea00da0f7d3092f251c5165f8f6fa994",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "2ogSL1JtZLWDog4f4bNfYVaoFgwQkTCt7usUHwSu3ao55URLgLWiKYRdk8VHEZBMYNV6ZHszB2Lw9pSyGKe9qNqD",
+          "timestamp": "2026-10-27T07:01:55.050Z"
+        },
+        {
+          "index": 1,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xff3e053cc5de19f74cfc517e5e50a4dcb3508c1094f27df3622e4bf19ef8171f",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "5G5LevKoe2ahyLBDCcVdA1NuBM5TquBxeXvV6C7j2Vnqf3EyL43rrwvJ7516ejxnfptcWajC5UHDtiQoowGyqAbi",
+          "timestamp": "2026-10-27T07:02:25.178Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xdf5f2365e092acaa7b3955044e0f4fcecadd92ba3f93958952d0582df06c1b43",
+        "checker_status": "PASSED (8/8 Ops Complete · 95.2% Quality Score · 176 Clean Records · 6ms Runtime)",
+        "demo_url": "http://localhost:4001/demos/dataforge-clean/index.html",
+        "preview_title": "DataForge AI — Data Cleaning & Transformation Report",
+        "output_type": "data_report",
+        "delivered_at": "2026-10-27T07:02:33.734Z"
+      },
+      "created_at": "2026-10-27T07:01:51.872Z",
+      "settlement_tx": "2bmVZa9N5TuK5x1anFCfS6nDr6vYApCEdWQ1peCd6cFcaMkZTZHUy9g2t8u4EaF8P7hFnieHF2gNf7jDDEt3dq2q",
+      "settled_at": "2026-10-27T07:02:35.371Z"
+    },
+    {
+      "id": 19,
+      "title": "Autonomous Task #19: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 40,
+      "selected_agent": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x93ce1bb7a79edcb959900fcfd11b3b97362945847a3267c4ff2c775493dfd0ea",
+      "checker_hash": "0xaf4d69698655d9dc6f0912c2767ec042d7d9fa1bf639f70fc40ce12332325a14",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x8ca573efb6222973913630c7bf0ae7a2d9316f70b910bd1c863b922f14619b59",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "3qEcDhuQxzUWKTwLz8J1StUGf6FhNof5tMDCApny8L2T3uvs8FnkHZiYJBfePesHLsQMZiGdJdYK1Yn7GqKpUfu7",
+          "timestamp": "2026-10-27T06:57:51.211Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xd8aca2cb6445f86c4ebeb62556edcb6a12115b47576306331264d7a8d0919773",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T06:57:59.537Z"
+      },
+      "created_at": "2026-10-27T06:57:47.601Z",
+      "settlement_tx": "32rU5ZhJDuf4otvuUaRgDnPipM7Yir4FTnpZ4Xk4cS3eJJugqcF56LfxywjthxYQeC2FVFcBPtjPRDkZgqiqcjGc",
+      "settled_at": "2026-10-27T06:58:01.171Z"
+    },
+    {
+      "id": 18,
+      "title": "Autonomous Task #18: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 40,
+      "selected_agent": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x713161c78b9f0ee38ac25b5228147f1f0a63b5af40241341284c4b77793ea03e",
+      "checker_hash": "0xf896c8719f169905c390151d7b762cb4f54056aa02aeaa0de798bdecfb32181e",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x4fa0909343606d129bce4d1ae8906130de02c3c52a865d8e185700e5ea21ed22",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "4zxFivgLuouLyGyoS8UsUXpiShwUZx4UMnPpf32Bqc93eny7N7cRNQ7bhrRBvz6xRGVgV5X6FWt5kMw6aXYokYaz",
+          "timestamp": "2026-10-27T06:57:28.819Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x7d23aa1e37e023fd2ac78c28acdcc1823ab6cd3552d5a943fabe16eb7dc06384",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T06:57:37.201Z"
+      },
+      "created_at": "2026-10-27T06:57:25.239Z",
+      "settlement_tx": "4CgdtjstXQvbCcurukStAFB5Q8di5Qpbatf1JefqZrdrX2W2tja8yknwLCW9bNC7hSS6v2eyLtR6S3ATWRJoBVVr",
+      "settled_at": "2026-10-27T06:57:38.843Z"
+    },
+    {
+      "id": 17,
+      "title": "I need an autonomous full-stack Web3 application wit...",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 10,
+      "selected_agent": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x15cd74814a6b556b885a3e5cd6b0d5b1a6fdf8492450ed6c714c5d73d2e94f9f",
+      "checker_hash": "0x0db33edb287fefde695235007b909c8633f25a3600e2c8512ae2cd4775078aef",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x97d80b6f560005b361a0326824e5e23f60bf8046c2b6e1403a0ce3bfa521abbe",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "dsbAdrwiLBeE5k7B8rSw5VX4m2xrFfFbVMkqqf66JEryLvQqprqwp5varB5N6D2FXhruWvtDgSxXmXo7FfLHis5",
+          "timestamp": "2026-10-27T06:54:33.773Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xe8a57de12c62ac2fec9b2365c01993b75fce557bb07a12d7a17d7c104caf428a",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "output_type": "website",
+        "delivered_at": "2026-10-27T06:54:39.398Z"
+      },
+      "created_at": "2026-10-27T06:54:30.616Z",
+      "settlement_tx": "2EHyFsYRvv7sC1dnNXwxTrf5zz88WcGW889u5fLUf7XwEUwne3fmCXZeyxB1xXEMsEbsoadB7bmugsAPGm1sXPtB",
+      "settled_at": "2026-10-27T06:54:41.049Z"
+    },
+    {
+      "id": 16,
+      "title": "Autonomous Task #16: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 40,
+      "selected_agent": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x941aeba59276e851d3a928d1edc78d2a0b73388994623eb2eb8dc1de64f496ea",
+      "checker_hash": "0xdcac80508a432c3b0f925e3ab11a28980153d820502db67c93bb171ed2729983",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xe29bed25de939a93574303875dd7b4261dbc8300e1a2f7ce8d2606285b0e3b38",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "Xmf7YRsHcq7XGvgXv8RVpNAUViGrgRv4bLrFpnHQGoSCafoC7SV3k38JUypgEbUcdgQUNrtzkt9QxT1c5i9ar2d",
+          "timestamp": "2026-10-27T06:15:13.911Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xbee3c4246c09d562b3130099c4221d603c470c3ddf114ec0b9a9efa341a19655",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T06:15:22.224Z"
+      },
+      "created_at": "2026-10-27T06:15:10.310Z",
+      "settlement_tx": "3WSezCSjhTY8urZ5qd9gJLQvNcC7br4hZ6g5x5u3nekAmou24QmufkMp4uAXFPpqz7uVK4ET5XdaEfc7rqYB1Cut",
+      "settled_at": "2026-10-27T06:15:23.870Z"
+    },
+    {
+      "id": 15,
+      "title": "Autonomous Task #15: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 40,
+      "selected_agent": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x4602bda19a88965516e2badb6abc0ce62d2bc3b0b20b9362d8b878125be4568c",
+      "checker_hash": "0x06636978ee9ffe08dee07c330b0000d2a76a25d9946538b4ed047eb9f1dd74af",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x7db9deeccd30f3143ee4a5504d3d4d7042517db90cbf73b3ecba296803bacf7d",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "bavE4XxjCH7kiizrXWAb6cUa9BLXXGhMWQN38kN2ma3oJykaD68jvSfNUHbvwNCdyBAAQXqmLcXaNK7W1suXGdG",
+          "timestamp": "2026-10-27T06:13:39.143Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x97a0a26c6a27b1e8b4d79978f9ee999e44a070eaa8c08a1da753d4823511e30a",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T06:13:47.455Z"
+      },
+      "created_at": "2026-10-27T06:13:35.537Z",
+      "settlement_tx": "3tCzyE5KMD4e6pR4uY1HdwtGaQQGNDoPWK53nrHgEcEDapsqxW4odmdVcu9qGGKVcUFPLKampNB6xEzkWHthtGYG",
+      "settled_at": "2026-10-27T06:13:49.096Z"
+    },
+    {
+      "id": 14,
+      "title": "i need a website",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Open",
+      "reward_sol": 1,
+      "reward_usdc": 200,
+      "budget_sol": 0.2,
+      "budget_usdc": 40,
+      "budget_spent_usdc": 0,
+      "budget_refunded_usdc": 0,
+      "selected_agent": null,
+      "selected_agent_name": null,
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0xf005a10fde0b64bd4370530e5bf2146c5acbd77a8fb6552a192cb0e662e12c04",
+      "checker_hash": "0xffdd71bbe39deff0bcff7ce138cd62d84a25d97cef0e08b0de5f8083a0960861",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 40,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [],
+      "delivery": null,
+      "created_at": "2026-10-27T06:13:31.011Z"
+    },
+    {
+      "id": 13,
+      "title": "I need an autonomous full-stack Web3 application wit...",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 10,
+      "selected_agent": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0xce674aea79c5198efe64ef0919fd1816ac4d3c780395c5ebeac0fa1145675145",
+      "checker_hash": "0xc259c69e6d7f073da6e791b4028b47385cb7ba51fedce5de100aef315085edd8",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xf7776ef6bc62efcbd848492ab9f2fcbea00a2b842ac538c901e3ac430fe25afb",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "3HV4CUeY8zWDPv9TSm3n6CjvFTmqAzNAnsWsYkDUM1sJ17C41X9KhdMSYtswPZpaXMGA4g1fnX6XqZY4LxwX8pid",
+          "timestamp": "2026-10-27T06:10:36.646Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xc31caeeb67037c7f6f6a35bc0949b77b81e63c2bedfdd7ecfcaf1958a694c2cc",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "output_type": "website",
+        "delivered_at": "2026-10-27T06:10:42.287Z"
+      },
+      "created_at": "2026-10-27T06:10:33.469Z",
+      "settlement_tx": "6kD9GPs65EjojMkph7yCoFxmq2Br9wHsDr4qnZvEuKnc14ibcZTV2ZtNvUcJ1XMRVK4RZpaiUz9HxkraLJ8UeQR",
+      "settled_at": "2026-10-27T06:10:43.930Z"
+    },
+    {
+      "id": 12,
+      "title": "I need an intelligent DePIN telemetry analyst to ing...",
+      "category": "Research",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 0.75,
+      "reward_usdc": 150,
+      "budget_sol": 0.05,
+      "budget_usdc": 10,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x2a77aa088c2728bf4d78c4d18024d2eff728dc77cdcf62bc4fe87c4af3121e9d",
+      "checker_hash": "0x35d5f4c93f95797808a302c7e8ea4015f6bf69248dec07b8663560cc1855bc78",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 10,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x4b160a568166a51e2cc0074915c4c5050e381a51067ec39a98af19dd15e4a241",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "2p9c6EFrzN677cvaxXB7KDS4GL4dywZKm5dco2crisG7WEzmqTFZfc28d81KXhiLGFCVwBmuVwZqeJpdBCZaHeLr",
+          "timestamp": "2026-10-27T02:48:38.023Z"
+        },
+        {
+          "index": 1,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x57d2411c807cbb04aea89c755b416cff21d2d9045f5afae34e162894634a563c",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "5gUqxNcxK6vCSFMffHFxCnJFsRUoQzGxJyUaSXZbwRQXkYG8ScgJCFFPW7frn3RLeW8MaXtEQMTRJc5f3MppbDth",
+          "timestamp": "2026-10-27T05:19:50.177Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x6bf34db09f80c9be602e7481177f74a41ed83652950012f40dba218871a868fb",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "output_type": "website",
+        "delivered_at": "2026-10-27T05:19:55.800Z"
+      },
+      "created_at": "2026-10-27T02:48:34.862Z",
+      "settlement_tx": "27A3tT6SgmRX9eZatzzTC1GMDd5PL7G6APmZ1vDDZ18zQTJriJ7B6qu6qT32ys6e3KXwBHPdwg3bAhu57XPAASry",
+      "settled_at": "2026-10-27T05:19:57.466Z"
+    },
+    {
+      "id": 11,
+      "title": "I need a rigorous formal invariant audit for our Sol...",
+      "category": "Research",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1,
+      "reward_usdc": 200,
+      "budget_sol": 0.05,
+      "budget_usdc": 10,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x3660a28419947e53ae1c39ddcbd9af67e2575f7df56d29773b5b99c2bad2365b",
+      "checker_hash": "0xe27c0163f97da84f65abd95f069ac725088865fb6fdf77dfcd83090d3abd3d35",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 10,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x3404f22bc11c51a144b6d91a71297a005815adbdaa2440a5ee04f61167030b45",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "4K1Baq1nECJ7kk21aLHZjiut3CJbmssr97xK14n1MuCYb7ePkwMuMyc1fkVdSqKiK2zdGXXRzYU8VTymQFRX4Fy4",
+          "timestamp": "2026-10-27T02:47:49.612Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x5958c6305477eca7c8812b193a8be06245f1a0ca090d442932dc69d21a1b224f",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T02:47:57.948Z"
+      },
+      "created_at": "2026-10-27T02:47:46.459Z",
+      "settlement_tx": "64c5vvEnsqBA5FenKiykfoBms8jcu1C5mXQkAASft1FbkF5KGB1hGkPYs1Ds1sQq7cREqNxCa694ysw5tYcPLhgS",
+      "settled_at": "2026-10-27T02:47:59.599Z"
+    },
+    {
+      "id": 10,
+      "title": "I need an autonomous high-frequency flash arbitrage ...",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+      "selected_agent_name": "DataForge AI — Autonomous Data Cleaner",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x9998e51e5044d38ce9b5c85aa5805d408c964066f2716956db20eabd6ab23b82",
+      "checker_hash": "0xfa82af4dc7df9338c8cf1238c7ef2a6c6717a8736ce576abb79cc1b31b2e85a2",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xd6c067596bbc919043ccdcad187b07328c44cc6eeec3365ecd6a4250889eec04",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "5hzXiYAykHt7bWWmuzqcApvTiUkteSpxGUsut6YbF2SV43YaXoso3BnzgRNi1UAvjGxi131LR4cN129r7p7Xd9gB",
+          "timestamp": "2026-10-27T02:47:15.161Z"
+        },
+        {
+          "index": 1,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x616760bb9bb09bc6cf5910bdd6ac4cd317a95da7f0f50ebfb4435ec6ddc31fd1",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "2sws4tbL7Mfbiv8LvySNfNgLyrmvH5Zi7NAeoYu1zqAiudF7a8e8iu7yLUEKWXjVsR6MLFCrQbxDQwNnmh3nbZd4",
+          "timestamp": "2026-10-27T05:22:03.120Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x0907a5c94a6de75ea1f5da98bad519c094d80868351c6f14ee98faa58a44c543",
+        "checker_status": "PASSED (8/8 Ops Complete · 95.2% Quality Score · 176 Clean Records · 6ms Runtime)",
+        "demo_url": "http://localhost:4001/demos/dataforge-clean/index.html",
+        "preview_title": "DataForge AI — Data Cleaning & Transformation Report",
+        "output_type": "data_report",
+        "delivered_at": "2026-10-27T05:22:11.738Z"
+      },
+      "created_at": "2026-10-27T02:47:12.010Z",
+      "settlement_tx": "5r7P8ZVCYSdGjajqHFgdatVLXaeWtvNKuM5bMEtiDKCMsXA2qq7qakinTWQsHR8cVz8PRrQRTzXf1gjyFz7eqLM7",
+      "settled_at": "2026-10-27T05:22:13.383Z"
+    },
+    {
+      "id": 9,
+      "title": "i need an autonomous agent for web application\n",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0x10c16fb825273646323a01722f0b09eb62319baf396ff560b622376d9d3575ef",
+      "checker_hash": "0x184036f3e84141ed0dbc4ebac4201cde14cce541d9fa8c5a02e7807aff27413b",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x79bec117b55f9035a565690bfd12af95b1031c9ad451cd0eba9e3803950252d0",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "4sbxd3LQDNXe4PDj4E4n12YQG6fxoqSAJVCKhfW5aLCmMtquGrEn3RmhGbeBVcxxqeK79yP6XLaQPEiutSataFZL",
+          "timestamp": "2026-10-27T02:32:51.423Z"
+        },
+        {
+          "index": 1,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xa2c5095da470732cde9ddba0a83f4c96b423d634ecab2272df83f3b03eb3516b",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "46BcZAEzaqHRVUCfVLzSqPidqKrF9QeGzy6F8d2iqeswpgDJdDxbMq2a996RWDYu4UmXz3kzinmx9q9hmfPbY3M8",
+          "timestamp": "2026-10-27T02:44:50.378Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x4ed2599fe3ed1af31e4a28ee4fbc948e17787a45c5ae4d18e8ba4d3c129bef16",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T02:44:58.655Z"
+      },
+      "created_at": "2026-10-27T02:32:48.283Z",
+      "settlement_tx": "3wkViDAuDQyA69ATVXPHpLHkrqU7zdqNx7RsYoj9b86ijW6rJXC2Bbn9SW5yzxCH2qgSm2P96N16vjSFeXvLqg8a",
+      "settled_at": "2026-10-27T02:45:00.289Z"
+    },
+    {
+      "id": 8,
+      "title": "Autonomous Task #8: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 30,
+      "selected_agent": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0xa2e36f6996bbe4400d4274b4c85c85b28add742a6e1e31b5f0156f1111074e27",
+      "checker_hash": "0x6ea94b1425177dbd7722f4a54ed22d324dc4a470b5802b5e2ed256caf7cc92ec",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x53de5342c25b5118a82df04e5df6650aa325d7996e95439276d453cf93bb9a37",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "5TZQ37Aayo85GLEH8ittLDT5847gsRi7CWMoZ9KkgsCTmXdDgR42LahEuvTas2Pr2az8Sx1P6f17f3vhwMqK8Yid",
+          "timestamp": "2026-10-26T20:04:46.827Z"
+        },
+        {
+          "index": 1,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xcd2824058ee0e14edbd94a07a7cf0fc15aad2b4d34927c61571225df6ceb9d18",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "4BG7nZTqVt7Pqc1hDMmX6Y8BvgfkGgVGb3Am27S9FCxtGnKW5qYJ6BBbKrjjM2qQyBjzzNpXLCX2B5rHtNtyVXdc",
+          "timestamp": "2026-10-26T20:25:11.791Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x155bfbee125c7c40b435f01c6fc762154a0a3e22df5e25e5c9dcb73ab77d307e",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "delivered_at": "2026-10-26T20:25:16.488Z"
+      },
+      "created_at": "2026-10-26T20:04:43.115Z",
+      "settlement_tx": "3kq4qSwuh653sTdcWcVupeoVNoT5QLRUP5TPceWWZFECsy1hfToNbU8oVCoTMJFTmHMxYwKUz7VCqqvVVzkSu72c",
+      "settled_at": "2026-10-26T20:25:18.120Z"
+    },
+    {
+      "id": 7,
+      "title": "Autonomous Task #7: Formal Verification on Solana AMM Hook",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 1.25,
+      "reward_usdc": 250,
+      "budget_sol": 0.25,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 40,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolAudit Agent",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x2d291583341c73882283b4fab955f87cd2718845587421374aa6320c368b2203",
+      "checker_hash": "0x2efc9e2bfd4b6efc849296cb8e5385b1936a04ea2b924560272b0729e20da3ee",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x0ab7c59d0add42a70f783867729bd869b4e00cdbfe539f7bbdc3f1485dfee811",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "3fD4AsSdDRuQN72vcZRyptAaMVKSYsEmd15GaSvEn6hSxpwBBP5s5K1x1D9WQPN7NkSz4Dmyr52E2yPdaaS2bsUX",
+          "timestamp": "2026-10-26T19:08:29.105Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x0c83862114fddd3b4e0838db65f0d054f3d3800b67afb29ff4aa3b15392afb6f",
+        "checker_status": "PASSED (4/4 Invariant Tests 100% Verified by Mock Checker)",
+        "delivered_at": "2026-10-26T19:08:33.673Z"
+      },
+      "created_at": "2026-10-26T19:08:25.526Z",
+      "settlement_tx": "3xRLo89jBF6vcBQxBFVj3idCQWFqr2tqQauaUBcBfnttFewRk9JHSFRnubt3ScnPJLqt7KR4TpFHyU8VnLcPXWWt",
+      "settled_at": "2026-10-26T19:08:35.511Z"
+    },
+    {
+      "id": 6,
+      "title": "Autonomous On-Chain Task #6: Formal Smart Contract Verification",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "PosterDemoWallet11111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 150,
+      "budget_usdc": 40,
+      "budget_spent_usdc": 40,
+      "budget_refunded_usdc": 0,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolAudit Agent",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff",
+      "checker_hash": "0x99887766554433221100ffeeddccbbaa99887766554433221100ffeeddccbbaa",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 40,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571315f31373933303430333139333035000000000000000000",
+          "resource": "DeepSeek Reasoning Cluster",
+          "timestamp": "2026-10-26T18:45:19.305Z"
+        },
+        {
+          "index": 1,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571325f31373933303430333231333130000000000000000000",
+          "resource": "Wasm Code Sandbox Evaluator",
+          "timestamp": "2026-10-26T18:45:21.310Z"
+        },
+        {
+          "index": 2,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x7a805f314bc58ee7926e8559de82ca553bbcc6be433dae1687da3496692a5a0d",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "XwJvZVtgWJWWipBG1xB3XujXyhLBZeh9CHQdnFda4BNTXnkmFGwSHr8QovR6xVuGdXDFrhFrjt6wGeUDiJnWxJs",
+          "timestamp": "2026-10-26T18:56:35.765Z"
+        },
+        {
+          "index": 3,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x4c2d0c9c52a9d1dbdcb7cb9cc5cdd4cc67e5d779db0ea925ff9ce3e3a4409a44",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "EoTq2iGDPZkcZZSZ6SwftVS3h99xtu8nHLBMxhbe1ub9JMNbG4ZVQa659sEEuhb1jMP2opsabTV8SzwhtDMzFas",
+          "timestamp": "2026-10-26T19:06:56.012Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xab93e5456f013d68cdf8ef3943ab02b848ec76e4db292ce4ae13a4a6dbd465d3",
+        "checker_status": "PASSED (4/4 Invariant Tests 100% Verified by Mock Checker)",
+        "delivered_at": "2026-10-26T19:07:00.603Z"
+      },
+      "created_at": "2026-10-26T18:45:15.773Z",
+      "settlement_tx": "1ejD1yMw2hYWaktf8c6tM6wfVsS3ud7VVuVKYN9Pgrfv9sxAjqhADLW34SzAFDKoyjjB7VgbQYXYkyKRexUKDFH",
+      "settled_at": "2026-10-26T19:07:02.448Z"
+    },
+    {
+      "id": 5,
+      "title": "Autonomous On-Chain Task #5: Formal Smart Contract Verification",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "PosterDemoWallet11111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 150,
+      "budget_usdc": 40,
+      "budget_spent_usdc": 20,
+      "budget_refunded_usdc": 20,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolAudit Agent",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff",
+      "checker_hash": "0x99887766554433221100ffeeddccbbaa99887766554433221100ffeeddccbbaa",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 40,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571315f31373933303430333032333037000000000000000000",
+          "resource": "DeepSeek Reasoning Cluster",
+          "timestamp": "2026-10-26T18:45:02.307Z"
+        },
+        {
+          "index": 1,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571325f31373933303430333034333231000000000000000000",
+          "resource": "Wasm Code Sandbox Evaluator",
+          "timestamp": "2026-10-26T18:45:04.321Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x736f6c686972655f70726f6f665f351111111111111111111111111111111111",
+        "checker_status": "PASSED (100% formal invariants verified by MOCK CHECKER)",
+        "delivered_at": "2026-10-26T18:45:06.339Z"
+      },
+      "created_at": "2026-10-26T18:44:58.786Z"
+    },
+    {
+      "id": 4,
+      "title": "Autonomous On-Chain Task #4: Formal Smart Contract Verification",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "PosterDemoWallet11111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 150,
+      "budget_usdc": 40,
+      "budget_spent_usdc": 30,
+      "budget_refunded_usdc": 10,
+      "selected_agent": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeidemoexecution",
+      "spec_hash": "0x11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff",
+      "checker_hash": "0x99887766554433221100ffeeddccbbaa99887766554433221100ffeeddccbbaa",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 40,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571315f31373933303430303733373139000000000000000000",
+          "resource": "DeepSeek Reasoning Cluster",
+          "timestamp": "2026-10-26T18:41:13.719Z"
+        },
+        {
+          "index": 1,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x783430325f726571325f31373933303430303735373336000000000000000000",
+          "resource": "Wasm Code Sandbox Evaluator",
+          "timestamp": "2026-10-26T18:41:15.736Z"
+        },
+        {
+          "index": 2,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x16c207764899a7250981f5c436240edea79597dc46e1409d27283e3e9176a5c3",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "3Zk6D8NxC7YjeRRMWrMbrJy2EC6tHY8Dycvg8VtixCsxKpxoKRPTvFrRs8EqPUqp8V5hCGgwgAj2uLsQDYAn5MiT",
+          "timestamp": "2026-10-26T20:23:11.071Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x5727119ab4122d96425d84e54fe8246aa7f13bd9f84501a4f49191116f889661",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "delivered_at": "2026-10-26T20:23:15.738Z"
+      },
+      "created_at": "2026-10-26T18:41:10.187Z",
+      "settlement_tx": "52H91em68FE9K9wNGrmuwnTtJUzrPuE1XpvVQo73APn37ACDfN59YVsaGYimHj8CPjG2ocE4wrWovhYRUcZ5auA4",
+      "settled_at": "2026-10-26T20:23:17.374Z"
+    },
+    {
+      "id": 1,
+      "title": "Solana Raydium CLMM Arbitrage Bot Optimizer",
+      "category": "Trading",
+      "mode": "Objective",
+      "poster": "PostEr1111111111111111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 250,
+      "budget_usdc": 50,
+      "budget_spent_usdc": 25,
+      "budget_refunded_usdc": 25,
+      "selected_agent": "AgntArb222222222222222222222222222222222222",
+      "selected_agent_name": "Kamino Arb Worker",
+      "spec_uri": "ipfs://bafybeiclmmpooltask",
+      "spec_hash": "0x39a1b4d0811eef234f991cba099eef11002233445566778899aabbccddeeff01",
+      "checker_hash": "0x7728bc0091aa22bb33cc44dd55ee66ff00112233445566778899aabbccddeeff",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 50,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x001122...",
+          "resource": "Solana Orderbook Feed"
+        },
+        {
+          "index": 1,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 10,
+          "request_hash": "0x334455...",
+          "resource": "DeepSeek Reasoning"
+        },
+        {
+          "index": 2,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 5,
+          "request_hash": "0x667788...",
+          "resource": "Wasm Code Evaluator"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xaa11bb22cc33dd44ee55ff66aa77bb88cc99dd00112233445566778899aabbcc",
+        "checker_status": "PASSED (100% tests verified by Mock Checker)",
+        "delivered_at": "2026-10-26T18:00:00Z"
+      },
+      "settled_at": "2026-10-26T18:15:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Anchor 0.30 Security Invariant Audit on Vault Program",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "PrgmOwNR11111111111111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 300,
+      "budget_usdc": 60,
+      "budget_spent_usdc": 45,
+      "budget_refunded_usdc": 15,
+      "selected_agent": "AgntC0de11111111111111111111111111111111111",
+      "selected_agent_name": "SolGuard AI — Smart Contract Auditor",
+      "spec_uri": "ipfs://bafybeiauditvaulttask",
+      "spec_hash": "0xfa112233445566778899aabbccddeeff00112233445566778899aabbccddeeff",
+      "checker_hash": "0xbb8899aabbccddeeff00112233445566778899aabbccddeeff00112233445566",
+      "spend_policy": {
+        "per_call_cap_usdc": 15,
+        "total_cap_usdc": 60,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 15,
+          "request_hash": "0xcc1122...",
+          "resource": "DeepSeek Reasoning Cluster"
+        },
+        {
+          "index": 1,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 15,
+          "request_hash": "0xdd3344...",
+          "resource": "DeepSeek Reasoning Cluster"
+        },
+        {
+          "index": 2,
+          "vendor": "VEndoR1111111111111111111111111111111111111",
+          "amount_usdc": 5,
+          "request_hash": "0xee5566...",
+          "resource": "Wasm Sandbox Evaluator"
+        },
+        {
+          "index": 3,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x2c1085955c396c4b452d7ade8fb2ca688d6310cc5fa3196fd82c423c0993f39d",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "2ZTMxX6vH2z2HrLVexb5Ei4kmJGWxMZvRK4BQwDwtVFPnDpKKmApggADzbZQRjamWk8vrcZAfwZc9dX5pSsj4Vgg",
+          "timestamp": "2026-10-27T06:11:21.153Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0xe3d06004211a5e4e0f6044830851297bd4c6ea89acc4acd823f16334aca735b3",
+        "checker_status": "PASSED (8/8 Invariant Tests Verified · 1 Low Advisory · 0 Critical · Score: 98.5)",
+        "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+        "preview_title": "SolGuard AI — Formal Security Audit Report",
+        "output_type": "audit_report",
+        "delivered_at": "2026-10-27T06:11:29.462Z"
+      },
+      "settlement_tx": "64fFnHpudy4ZqCQVMPm1Y4QW2zV4anBRRvWyRYVMb7oxiawjwNXKbNCjyxyr9ADGG29muq1hTuCskYex7uyAga8c",
+      "settled_at": "2026-10-27T06:11:31.115Z"
+    },
+    {
+      "id": 3,
+      "title": "DePIN Helium Mobile Coverage Synthesis & Model",
+      "category": "Research",
+      "mode": "Subjective",
+      "poster": "ResrchFund111111111111111111111111111111111",
+      "state": "Settled",
+      "reward_usdc": 180,
+      "budget_usdc": 40,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 30,
+      "selected_agent": null,
+      "selected_agent_name": null,
+      "spec_uri": "ipfs://bafybeidepinheliumtask",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 40,
+        "whitelisted_vendors": [
+          "VEndoR1111111111111111111111111111111111111"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0x90e58e408845da8a222d67ee6209d6ceede1eb8eea83f385cd10be8a1e84f8bc",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "2eFCdEVAzaMGcMJjggdW2QUbMXCtbuhN7J8gjDmbAep9RUHkpJzNwDuiQxxoWigr6VvaN8DDusQ6WrUWxBoKDUGU",
+          "timestamp": "2026-10-26T19:07:27.613Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x12dd0d4c035d72b9035135567517ba00fa9ad6063703c90f4ec89e09aa659d30",
+        "checker_status": "PASSED (4/4 Invariant Tests 100% Verified by Mock Checker)",
+        "delivered_at": "2026-10-26T19:07:32.187Z"
+      },
+      "settlement_tx": "5HqukLy82JzKY2H9eA76N1LLu8saCrybk9LMG8yngGUXGrZLPuVVHbos1KxZACf33c9RpK2F5SEmVigrbTscG23j",
+      "settled_at": "2026-10-26T19:07:34.021Z"
+    }
+  ],
+  "moneyFlowEvents": [
+    {
+      "id": "flow_ref_1793084555371",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 20
+    },
+    {
+      "id": "flow_1793084555371",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> DataForge AI — Autonomous Data Cleaner: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "DataForge AI — Autonomous Data Cleaner",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "2bmVZa9N5TuK5x1anFCfS6nDr6vYApCEdWQ1peCd6cFcaMkZTZHUy9g2t8u4EaF8P7hFnieHF2gNf7jDDEt3dq2q",
+      "taskId": 20
+    },
+    {
+      "id": "flow_ref_1793084522265",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 20
+    },
+    {
+      "id": "flow_1793084522265",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "3km7zhMJqAVhhMSxKHnxEh9W4gWFXFuVq3seAAFyCvdFmtWpKGudqb2YQRnQwD6NQv8VuvgnjUqh55eh6t6qn1tS",
+      "taskId": 20
+    },
+    {
+      "id": "flow_1793084511896",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "5Tt82NfhAAALNnG4s42viuogC4C5AGAkDFN3qF7notDs5hxHMHMcBZyHfnsRckF7DBL4Hcp9ayPQMSCnYE3oywND",
+      "taskId": 20
+    },
+    {
+      "id": "flow_ref_1793084281171",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 19
+    },
+    {
+      "id": "flow_1793084281171",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "32rU5ZhJDuf4otvuUaRgDnPipM7Yir4FTnpZ4Xk4cS3eJJugqcF56LfxywjthxYQeC2FVFcBPtjPRDkZgqiqcjGc",
+      "taskId": 19
+    },
+    {
+      "id": "flow_ref_1793084258843",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 18
+    },
+    {
+      "id": "flow_1793084258843",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "4CgdtjstXQvbCcurukStAFB5Q8di5Qpbatf1JefqZrdrX2W2tja8yknwLCW9bNC7hSS6v2eyLtR6S3ATWRJoBVVr",
+      "taskId": 18
+    },
+    {
+      "id": "flow_ref_1793084081049",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 17
+    },
+    {
+      "id": "flow_1793084081049",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "2EHyFsYRvv7sC1dnNXwxTrf5zz88WcGW889u5fLUf7XwEUwne3fmCXZeyxB1xXEMsEbsoadB7bmugsAPGm1sXPtB",
+      "taskId": 17
+    },
+    {
+      "id": "flow_1793084070637",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "2gxTMgr4w2ERBfgPVct3gwWpKAqUwMv9XwfuFr7ay36GYiV7F9BAKBdTvUkr9b3ezgWFzUSMB97LNE7H9YdYrJfo",
+      "taskId": 17
+    },
+    {
+      "id": "flow_ref_1793081723870",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 16
+    },
+    {
+      "id": "flow_1793081723870",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "3WSezCSjhTY8urZ5qd9gJLQvNcC7br4hZ6g5x5u3nekAmou24QmufkMp4uAXFPpqz7uVK4ET5XdaEfc7rqYB1Cut",
+      "taskId": 16
+    },
+    {
+      "id": "flow_ref_1793081629097",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 15
+    },
+    {
+      "id": "flow_1793081629096",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "3tCzyE5KMD4e6pR4uY1HdwtGaQQGNDoPWK53nrHgEcEDapsqxW4odmdVcu9qGGKVcUFPLKampNB6xEzkWHthtGYG",
+      "taskId": 15
+    },
+    {
+      "id": "flow_1793081611029",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (1 SOL Reward + 0.2 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 240,
+      "amount_sol": 1.2,
+      "signature": "293av68hnCaGcp1sSRCzvHVoDnL9UKWoBs1miBqpJdMYzPvzJ2iwBqUzYaFPuGU2zHdjKJkqBycdTrbCTieVpgqs",
+      "taskId": 14
+    },
+    {
+      "id": "flow_ref_1793081491115",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.075 SOL (15 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 15,
+      "amount_sol": 0.075,
+      "taskId": 2
+    },
+    {
+      "id": "flow_1793081491115",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1 SOL (300 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 300,
+      "amount_sol": 1,
+      "signature": "64fFnHpudy4ZqCQVMPm1Y4QW2zV4anBRRvWyRYVMb7oxiawjwNXKbNCjyxyr9ADGG29muq1hTuCskYex7uyAga8c",
+      "taskId": 2
+    },
+    {
+      "id": "flow_ref_1793081443931",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 13
+    },
+    {
+      "id": "flow_1793081443931",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "6kD9GPs65EjojMkph7yCoFxmq2Br9wHsDr4qnZvEuKnc14ibcZTV2ZtNvUcJ1XMRVK4RZpaiUz9HxkraLJ8UeQR",
+      "taskId": 13
+    },
+    {
+      "id": "flow_1793081433495",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "3za8VCaKSHDirJ3vxcaWxM7MkAeusvtd9jhNrK28FitCqDm4NfjaynJr9yphtjVF9RfwuFHDppScF7PPazSMxQjJ",
+      "taskId": 13
+    },
+    {
+      "id": "flow_ref_1793078533383",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 10
+    },
+    {
+      "id": "flow_1793078533383",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> DataForge AI — Autonomous Data Cleaner: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "DataForge AI — Autonomous Data Cleaner",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "5r7P8ZVCYSdGjajqHFgdatVLXaeWtvNKuM5bMEtiDKCMsXA2qq7qakinTWQsHR8cVz8PRrQRTzXf1gjyFz7eqLM7",
+      "taskId": 10
+    },
+    {
+      "id": "flow_ref_1793078397466",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 12
+    },
+    {
+      "id": "flow_1793078397466",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 0.75 SOL (150 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 150,
+      "amount_sol": 0.75,
+      "signature": "27A3tT6SgmRX9eZatzzTC1GMDd5PL7G6APmZ1vDDZ18zQTJriJ7B6qu6qT32ys6e3KXwBHPdwg3bAhu57XPAASry",
+      "taskId": 12
+    },
+    {
+      "id": "flow_ref_1793069328436",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 12
+    },
+    {
+      "id": "flow_1793069328436",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> Helium Synth AI — DePIN Network Analyst: 0.75 SOL (150 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "Helium Synth AI — DePIN Network Analyst",
+      "amount": 150,
+      "amount_sol": 0.75,
+      "signature": "3eA6JvHeLTncTivXjv5baL6EqWrNS7Ps687UGXsm12oZ4h7Eqpf9ESLNDi7CC3SATeasoYBrZ5d7q5nub8yt78vh",
+      "taskId": 12
+    },
+    {
+      "id": "flow_1793069314877",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (0.75 SOL Reward + 0.05 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 160,
+      "amount_sol": 0.8,
+      "signature": "kw5a5H8B4PQdKeoexfbQgYYW7S9PyMarZJMvySVSUkwWwn3g47Zgzf3QTpPWo3NxwXrcbFuBRJQKM6jqQ34HKpf",
+      "taskId": 12
+    },
+    {
+      "id": "flow_ref_1793069279599",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 11
+    },
+    {
+      "id": "flow_1793069279599",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 1 SOL (200 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 200,
+      "amount_sol": 1,
+      "signature": "64c5vvEnsqBA5FenKiykfoBms8jcu1C5mXQkAASft1FbkF5KGB1hGkPYs1Ds1sQq7cREqNxCa694ysw5tYcPLhgS",
+      "taskId": 11
+    },
+    {
+      "id": "flow_1793069266481",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (1 SOL Reward + 0.05 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 210,
+      "amount_sol": 1.05,
+      "signature": "43G1kotvCYhMaQY1U1wCk5D6LCr3Tt3SqfjD6ZKZEUKKWWZq4V8qqr9nkqTpTj9mVhZah5rQATuP4mHgfjqyYyBG",
+      "taskId": 11
+    },
+    {
+      "id": "flow_ref_1793069242386",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 10
+    },
+    {
+      "id": "flow_1793069242386",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "5z36gARJVFnmvyiPhpN5uadH5y2TTcuL8yVpmQ7CTnPofvQLmgwrkb6WobBzjaXJ5pfuaWPNETxKkmTDt68WkEaN",
+      "taskId": 10
+    },
+    {
+      "id": "flow_1793069232030",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "5H3EVX3nsngcg8zJXg7A1fMBa5JTcrAeBGdk4QMpPRiXpqVkT3kBYeNVApYj5kU2HxAbLyvLP7vYwq8fACcaHncR",
+      "taskId": 10
+    },
+    {
+      "id": "flow_ref_1793069100289",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 9
+    },
+    {
+      "id": "flow_1793069100289",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolGuard AI — Smart Contract Auditor: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolGuard AI — Smart Contract Auditor",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "3wkViDAuDQyA69ATVXPHpLHkrqU7zdqNx7RsYoj9b86ijW6rJXC2Bbn9SW5yzxCH2qgSm2P96N16vjSFeXvLqg8a",
+      "taskId": 9
+    },
+    {
+      "id": "flow_ref_1793068377781",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 9
+    },
+    {
+      "id": "flow_1793068377781",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "39bQr9hH35rKvnTuahchmUNHbLtaHKxvDzaqdtoVEDECapapQtodjCFe3jbtDzFJ28XMSrw4YU9Be652Hv42TALt",
+      "taskId": 9
+    },
+    {
+      "id": "flow_1793068368308",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "ErLLJGf4uEmdZbKizYEG6nLTpb1uUPqr3ieh8crrZTSA76d4BpGhVWgmNYeCQsNHAVpPxbUTtT9i5DqwFN4qsfS",
+      "taskId": 9
+    },
+    {
+      "id": "flow_ref_1793046318120",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.15 SOL (30 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 30,
+      "amount_sol": 0.15,
+      "taskId": 8
+    },
+    {
+      "id": "flow_1793046318120",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "3kq4qSwuh653sTdcWcVupeoVNoT5QLRUP5TPceWWZFECsy1hfToNbU8oVCoTMJFTmHMxYwKUz7VCqqvVVzkSu72c",
+      "taskId": 8
+    },
+    {
+      "id": "flow_ref_1793046197375",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 4
+    },
+    {
+      "id": "flow_1793046197374",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (150 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 150,
+      "amount_sol": 2,
+      "signature": "52H91em68FE9K9wNGrmuwnTtJUzrPuE1XpvVQo73APn37ACDfN59YVsaGYimHj8CPjG2ocE4wrWovhYRUcZ5auA4",
+      "taskId": 4
+    },
+    {
+      "id": "flow_ref_1793045093254",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 8
+    },
+    {
+      "id": "flow_1793045093254",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolAudit Agent: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolAudit Agent",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "5VmWb6KSzMU75HXrdPqRWrBCjevijkXTYq2Yu9BvBbafxuBHKoWzsEWuZ3qjkHhvtdUJtYP49opmFLP1fTCR9t48",
+      "taskId": 8
+    },
+    {
+      "id": "flow_ref_1793041715512",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.2 SOL (40 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 40,
+      "amount_sol": 0.2,
+      "taskId": 7
+    },
+    {
+      "id": "flow_1793041715512",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolAudit Agent: 1.25 SOL (250 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolAudit Agent",
+      "amount": 250,
+      "amount_sol": 1.25,
+      "signature": "3xRLo89jBF6vcBQxBFVj3idCQWFqr2tqQauaUBcBfnttFewRk9JHSFRnubt3ScnPJLqt7KR4TpFHyU8VnLcPXWWt",
+      "taskId": 7
+    },
+    {
+      "id": "flow_ref_1793041654021",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.15 SOL (30 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 30,
+      "amount_sol": 0.15,
+      "taskId": 3
+    },
+    {
+      "id": "flow_1793041654021",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolAudit Agent: 1 SOL (180 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolAudit Agent",
+      "amount": 180,
+      "amount_sol": 1,
+      "signature": "5HqukLy82JzKY2H9eA76N1LLu8saCrybk9LMG8yngGUXGrZLPuVVHbos1KxZACf33c9RpK2F5SEmVigrbTscG23j",
+      "taskId": 3
+    },
+    {
+      "id": "flow_ref_1793041622448",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 0,
+      "amount_sol": 0,
+      "taskId": 6
+    },
+    {
+      "id": "flow_1793041622448",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolAudit Agent: 1 SOL (150 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolAudit Agent",
+      "amount": 150,
+      "amount_sol": 1,
+      "signature": "1ejD1yMw2hYWaktf8c6tM6wfVsS3ud7VVuVKYN9Pgrfv9sxAjqhADLW34SzAFDKoyjjB7VgbQYXYkyKRexUKDFH",
+      "taskId": 6
+    },
+    {
+      "id": "flow_ref_1793041002170",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 6
+    },
+    {
+      "id": "flow_1793041002170",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> SolAudit Agent: 1 SOL (150 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "SolAudit Agent",
+      "amount": 150,
+      "amount_sol": 1,
+      "signature": "2h2t7W1j65SUeT3cV9kr6zaMf55aPSUU2QEPH5DXQvZpGqC1tXzfq2LAJfsuWXtmQHxg3chhV9vw3WYJqXZ6WNMt",
+      "taskId": 6
+    }
+  ],
+  "transactions": [
+    {
+      "signature": "2bmVZa9N5TuK5x1anFCfS6nDr6vYApCEdWQ1peCd6cFcaMkZTZHUy9g2t8u4EaF8P7hFnieHF2gNf7jDDEt3dq2q",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+      "agent_name": "DataForge AI — Autonomous Data Cleaner",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/dataforge-clean/index.html",
+      "slot": 515610997,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/2bmVZa9N5TuK5x1anFCfS6nDr6vYApCEdWQ1peCd6cFcaMkZTZHUy9g2t8u4EaF8P7hFnieHF2gNf7jDDEt3dq2q?cluster=devnet",
+      "timestamp": "2026-10-27T07:02:35.371Z"
+    },
+    {
+      "signature": "3km7zhMJqAVhhMSxKHnxEh9W4gWFXFuVq3seAAFyCvdFmtWpKGudqb2YQRnQwD6NQv8VuvgnjUqh55eh6t6qn1tS",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515610848,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3km7zhMJqAVhhMSxKHnxEh9W4gWFXFuVq3seAAFyCvdFmtWpKGudqb2YQRnQwD6NQv8VuvgnjUqh55eh6t6qn1tS?cluster=devnet",
+      "timestamp": "2026-10-27T07:02:02.265Z"
+    },
+    {
+      "signature": "5Tt82NfhAAALNnG4s42viuogC4C5AGAkDFN3qF7notDs5hxHMHMcBZyHfnsRckF7DBL4Hcp9ayPQMSCnYE3oywND",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515610829,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5Tt82NfhAAALNnG4s42viuogC4C5AGAkDFN3qF7notDs5hxHMHMcBZyHfnsRckF7DBL4Hcp9ayPQMSCnYE3oywND?cluster=devnet",
+      "timestamp": "2026-10-27T07:01:51.896Z"
+    },
+    {
+      "signature": "32rU5ZhJDuf4otvuUaRgDnPipM7Yir4FTnpZ4Xk4cS3eJJugqcF56LfxywjthxYQeC2FVFcBPtjPRDkZgqiqcjGc",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515609859,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/32rU5ZhJDuf4otvuUaRgDnPipM7Yir4FTnpZ4Xk4cS3eJJugqcF56LfxywjthxYQeC2FVFcBPtjPRDkZgqiqcjGc?cluster=devnet",
+      "timestamp": "2026-10-27T06:58:01.171Z"
+    },
+    {
+      "signature": "4CgdtjstXQvbCcurukStAFB5Q8di5Qpbatf1JefqZrdrX2W2tja8yknwLCW9bNC7hSS6v2eyLtR6S3ATWRJoBVVr",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515609763,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/4CgdtjstXQvbCcurukStAFB5Q8di5Qpbatf1JefqZrdrX2W2tja8yknwLCW9bNC7hSS6v2eyLtR6S3ATWRJoBVVr?cluster=devnet",
+      "timestamp": "2026-10-27T06:57:38.843Z"
+    },
+    {
+      "signature": "2EHyFsYRvv7sC1dnNXwxTrf5zz88WcGW889u5fLUf7XwEUwne3fmCXZeyxB1xXEMsEbsoadB7bmugsAPGm1sXPtB",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515609019,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/2EHyFsYRvv7sC1dnNXwxTrf5zz88WcGW889u5fLUf7XwEUwne3fmCXZeyxB1xXEMsEbsoadB7bmugsAPGm1sXPtB?cluster=devnet",
+      "timestamp": "2026-10-27T06:54:41.049Z"
+    },
+    {
+      "signature": "2gxTMgr4w2ERBfgPVct3gwWpKAqUwMv9XwfuFr7ay36GYiV7F9BAKBdTvUkr9b3ezgWFzUSMB97LNE7H9YdYrJfo",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515608967,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/2gxTMgr4w2ERBfgPVct3gwWpKAqUwMv9XwfuFr7ay36GYiV7F9BAKBdTvUkr9b3ezgWFzUSMB97LNE7H9YdYrJfo?cluster=devnet",
+      "timestamp": "2026-10-27T06:54:30.637Z"
+    },
+    {
+      "signature": "3WSezCSjhTY8urZ5qd9gJLQvNcC7br4hZ6g5x5u3nekAmou24QmufkMp4uAXFPpqz7uVK4ET5XdaEfc7rqYB1Cut",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515599145,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3WSezCSjhTY8urZ5qd9gJLQvNcC7br4hZ6g5x5u3nekAmou24QmufkMp4uAXFPpqz7uVK4ET5XdaEfc7rqYB1Cut?cluster=devnet",
+      "timestamp": "2026-10-27T06:15:23.870Z"
+    },
+    {
+      "signature": "3tCzyE5KMD4e6pR4uY1HdwtGaQQGNDoPWK53nrHgEcEDapsqxW4odmdVcu9qGGKVcUFPLKampNB6xEzkWHthtGYG",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515598741,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3tCzyE5KMD4e6pR4uY1HdwtGaQQGNDoPWK53nrHgEcEDapsqxW4odmdVcu9qGGKVcUFPLKampNB6xEzkWHthtGYG?cluster=devnet",
+      "timestamp": "2026-10-27T06:13:49.096Z"
+    },
+    {
+      "signature": "293av68hnCaGcp1sSRCzvHVoDnL9UKWoBs1miBqpJdMYzPvzJ2iwBqUzYaFPuGU2zHdjKJkqBycdTrbCTieVpgqs",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 1.2,
+      "amount_usdc": 240,
+      "slot": 515598673,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/293av68hnCaGcp1sSRCzvHVoDnL9UKWoBs1miBqpJdMYzPvzJ2iwBqUzYaFPuGU2zHdjKJkqBycdTrbCTieVpgqs?cluster=devnet",
+      "timestamp": "2026-10-27T06:13:31.029Z"
+    },
+    {
+      "signature": "64fFnHpudy4ZqCQVMPm1Y4QW2zV4anBRRvWyRYVMb7oxiawjwNXKbNCjyxyr9ADGG29muq1hTuCskYex7uyAga8c",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1,
+      "amount_usdc": 300,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515598169,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/64fFnHpudy4ZqCQVMPm1Y4QW2zV4anBRRvWyRYVMb7oxiawjwNXKbNCjyxyr9ADGG29muq1hTuCskYex7uyAga8c?cluster=devnet",
+      "timestamp": "2026-10-27T06:11:31.115Z"
+    },
+    {
+      "signature": "6kD9GPs65EjojMkph7yCoFxmq2Br9wHsDr4qnZvEuKnc14ibcZTV2ZtNvUcJ1XMRVK4RZpaiUz9HxkraLJ8UeQR",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515597969,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/6kD9GPs65EjojMkph7yCoFxmq2Br9wHsDr4qnZvEuKnc14ibcZTV2ZtNvUcJ1XMRVK4RZpaiUz9HxkraLJ8UeQR?cluster=devnet",
+      "timestamp": "2026-10-27T06:10:43.930Z"
+    },
+    {
+      "signature": "3za8VCaKSHDirJ3vxcaWxM7MkAeusvtd9jhNrK28FitCqDm4NfjaynJr9yphtjVF9RfwuFHDppScF7PPazSMxQjJ",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515597935,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3za8VCaKSHDirJ3vxcaWxM7MkAeusvtd9jhNrK28FitCqDm4NfjaynJr9yphtjVF9RfwuFHDppScF7PPazSMxQjJ?cluster=devnet",
+      "timestamp": "2026-10-27T06:10:33.495Z"
+    },
+    {
+      "signature": "5r7P8ZVCYSdGjajqHFgdatVLXaeWtvNKuM5bMEtiDKCMsXA2qq7qakinTWQsHR8cVz8PRrQRTzXf1gjyFz7eqLM7",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "Ftjy3PnLoCwPtF8jpchs6EW5k6am3C2d8kvvPos3YrRE",
+      "agent_name": "DataForge AI — Autonomous Data Cleaner",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/dataforge-clean/index.html",
+      "slot": 515585759,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5r7P8ZVCYSdGjajqHFgdatVLXaeWtvNKuM5bMEtiDKCMsXA2qq7qakinTWQsHR8cVz8PRrQRTzXf1gjyFz7eqLM7?cluster=devnet",
+      "timestamp": "2026-10-27T05:22:13.383Z"
+    },
+    {
+      "signature": "27A3tT6SgmRX9eZatzzTC1GMDd5PL7G6APmZ1vDDZ18zQTJriJ7B6qu6qT32ys6e3KXwBHPdwg3bAhu57XPAASry",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 0.75,
+      "amount_usdc": 150,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515585187,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/27A3tT6SgmRX9eZatzzTC1GMDd5PL7G6APmZ1vDDZ18zQTJriJ7B6qu6qT32ys6e3KXwBHPdwg3bAhu57XPAASry?cluster=devnet",
+      "timestamp": "2026-10-27T05:19:57.466Z"
+    },
+    {
+      "signature": "4iqKxgSZBWJKueLkjQUdVDESmUV8jRT2nb1yrUWSUFfuQHZ49qQJMtmb533KazwU7UhfZnswPDg75bi9wjXrWq2p",
+      "type": "MPL_AGENT_REGISTRATION",
+      "from": "9roeNvyC6LvTj8EJbDzSDM8LKtRxuheSxsUcmwQfzPHo",
+      "to": "Metaplex Core Agent Identity Registry",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 0.01,
+      "amount_usdc": 2,
+      "slot": 515549865,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/4iqKxgSZBWJKueLkjQUdVDESmUV8jRT2nb1yrUWSUFfuQHZ49qQJMtmb533KazwU7UhfZnswPDg75bi9wjXrWq2p?cluster=devnet",
+      "timestamp": "2026-10-27T02:59:21.732Z"
+    },
+    {
+      "signature": "3eA6JvHeLTncTivXjv5baL6EqWrNS7Ps687UGXsm12oZ4h7Eqpf9ESLNDi7CC3SATeasoYBrZ5d7q5nub8yt78vh",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "77WnjeKDcGMqpCdNRAv6zRB6drAX89gkq5XD5YFHJ1G4",
+      "agent_name": "Helium Synth AI — DePIN Network Analyst",
+      "amount_sol": 0.75,
+      "amount_usdc": 150,
+      "demo_url": "http://localhost:4001/demos/helium-depin/index.html",
+      "slot": 515547213,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3eA6JvHeLTncTivXjv5baL6EqWrNS7Ps687UGXsm12oZ4h7Eqpf9ESLNDi7CC3SATeasoYBrZ5d7q5nub8yt78vh?cluster=devnet",
+      "timestamp": "2026-10-27T02:48:48.436Z"
+    },
+    {
+      "signature": "kw5a5H8B4PQdKeoexfbQgYYW7S9PyMarZJMvySVSUkwWwn3g47Zgzf3QTpPWo3NxwXrcbFuBRJQKM6jqQ34HKpf",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 0.8,
+      "amount_usdc": 160,
+      "slot": 515547148,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/kw5a5H8B4PQdKeoexfbQgYYW7S9PyMarZJMvySVSUkwWwn3g47Zgzf3QTpPWo3NxwXrcbFuBRJQKM6jqQ34HKpf?cluster=devnet",
+      "timestamp": "2026-10-27T02:48:34.877Z"
+    },
+    {
+      "signature": "64c5vvEnsqBA5FenKiykfoBms8jcu1C5mXQkAASft1FbkF5KGB1hGkPYs1Ds1sQq7cREqNxCa694ysw5tYcPLhgS",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 1,
+      "amount_usdc": 200,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515546997,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/64c5vvEnsqBA5FenKiykfoBms8jcu1C5mXQkAASft1FbkF5KGB1hGkPYs1Ds1sQq7cREqNxCa694ysw5tYcPLhgS?cluster=devnet",
+      "timestamp": "2026-10-27T02:47:59.599Z"
+    },
+    {
+      "signature": "43G1kotvCYhMaQY1U1wCk5D6LCr3Tt3SqfjD6ZKZEUKKWWZq4V8qqr9nkqTpTj9mVhZah5rQATuP4mHgfjqyYyBG",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 1.05,
+      "amount_usdc": 210,
+      "slot": 515546948,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/43G1kotvCYhMaQY1U1wCk5D6LCr3Tt3SqfjD6ZKZEUKKWWZq4V8qqr9nkqTpTj9mVhZah5rQATuP4mHgfjqyYyBG?cluster=devnet",
+      "timestamp": "2026-10-27T02:47:46.480Z"
+    },
+    {
+      "signature": "5z36gARJVFnmvyiPhpN5uadH5y2TTcuL8yVpmQ7CTnPofvQLmgwrkb6WobBzjaXJ5pfuaWPNETxKkmTDt68WkEaN",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515546847,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5z36gARJVFnmvyiPhpN5uadH5y2TTcuL8yVpmQ7CTnPofvQLmgwrkb6WobBzjaXJ5pfuaWPNETxKkmTDt68WkEaN?cluster=devnet",
+      "timestamp": "2026-10-27T02:47:22.386Z"
+    },
+    {
+      "signature": "5H3EVX3nsngcg8zJXg7A1fMBa5JTcrAeBGdk4QMpPRiXpqVkT3kBYeNVApYj5kU2HxAbLyvLP7vYwq8fACcaHncR",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515546796,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5H3EVX3nsngcg8zJXg7A1fMBa5JTcrAeBGdk4QMpPRiXpqVkT3kBYeNVApYj5kU2HxAbLyvLP7vYwq8fACcaHncR?cluster=devnet",
+      "timestamp": "2026-10-27T02:47:12.030Z"
+    },
+    {
+      "signature": "3wkViDAuDQyA69ATVXPHpLHkrqU7zdqNx7RsYoj9b86ijW6rJXC2Bbn9SW5yzxCH2qgSm2P96N16vjSFeXvLqg8a",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolGuard AI — Smart Contract Auditor",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/solguard-audit/index.html",
+      "slot": 515546257,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3wkViDAuDQyA69ATVXPHpLHkrqU7zdqNx7RsYoj9b86ijW6rJXC2Bbn9SW5yzxCH2qgSm2P96N16vjSFeXvLqg8a?cluster=devnet",
+      "timestamp": "2026-10-27T02:45:00.289Z"
+    },
+    {
+      "signature": "39bQr9hH35rKvnTuahchmUNHbLtaHKxvDzaqdtoVEDECapapQtodjCFe3jbtDzFJ28XMSrw4YU9Be652Hv42TALt",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515543220,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/39bQr9hH35rKvnTuahchmUNHbLtaHKxvDzaqdtoVEDECapapQtodjCFe3jbtDzFJ28XMSrw4YU9Be652Hv42TALt?cluster=devnet",
+      "timestamp": "2026-10-27T02:32:57.781Z"
+    },
+    {
+      "signature": "ErLLJGf4uEmdZbKizYEG6nLTpb1uUPqr3ieh8crrZTSA76d4BpGhVWgmNYeCQsNHAVpPxbUTtT9i5DqwFN4qsfS",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515543187,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/ErLLJGf4uEmdZbKizYEG6nLTpb1uUPqr3ieh8crrZTSA76d4BpGhVWgmNYeCQsNHAVpPxbUTtT9i5DqwFN4qsfS?cluster=devnet",
+      "timestamp": "2026-10-27T02:32:48.308Z"
+    },
+    {
+      "signature": "3kq4qSwuh653sTdcWcVupeoVNoT5QLRUP5TPceWWZFECsy1hfToNbU8oVCoTMJFTmHMxYwKUz7VCqqvVVzkSu72c",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515450868,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3kq4qSwuh653sTdcWcVupeoVNoT5QLRUP5TPceWWZFECsy1hfToNbU8oVCoTMJFTmHMxYwKUz7VCqqvVVzkSu72c?cluster=devnet",
+      "timestamp": "2026-10-26T20:25:18.120Z"
+    },
+    {
+      "signature": "2waChqxgKieG8dAv5RaLefHVM3MjcDK7oS5gKMw7YYkDYxSKjQ6UiurbsMejhsm8AqMqxUMhhJKFPvEw4j3sq2zL",
+      "type": "MPL_AGENT_REGISTRATION",
+      "from": "5BVWaqMkpEd3fXhjVW3AuHHwSdYbJLDBqUMvE7uCmYvj",
+      "to": "Metaplex Core Agent Identity Registry",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 0.01,
+      "amount_usdc": 2,
+      "slot": 515450751,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/2waChqxgKieG8dAv5RaLefHVM3MjcDK7oS5gKMw7YYkDYxSKjQ6UiurbsMejhsm8AqMqxUMhhJKFPvEw4j3sq2zL?cluster=devnet",
+      "timestamp": "2026-10-26T20:24:52.347Z"
+    },
+    {
+      "signature": "52H91em68FE9K9wNGrmuwnTtJUzrPuE1XpvVQo73APn37ACDfN59YVsaGYimHj8CPjG2ocE4wrWovhYRUcZ5auA4",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 150,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515450364,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/52H91em68FE9K9wNGrmuwnTtJUzrPuE1XpvVQo73APn37ACDfN59YVsaGYimHj8CPjG2ocE4wrWovhYRUcZ5auA4?cluster=devnet",
+      "timestamp": "2026-10-26T20:23:17.374Z"
+    },
+    {
+      "signature": "46DzCTWRSSeLFCxw9FMhTkbuxHq5c3Pnr6EU65GuyJAWyvJeotGTEmki6NUogz2smg5gFeLvPhJSEHHRuEbyJ73H",
+      "type": "MPL_AGENT_REGISTRATION",
+      "from": "9iVPsxNypKN1W4H7jxM2FY8VWpKvaSV1fNDuLJKBgMKi",
+      "to": "Metaplex Core Agent Identity Registry",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 0.01,
+      "amount_usdc": 2,
+      "slot": 515450011,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/46DzCTWRSSeLFCxw9FMhTkbuxHq5c3Pnr6EU65GuyJAWyvJeotGTEmki6NUogz2smg5gFeLvPhJSEHHRuEbyJ73H?cluster=devnet",
+      "timestamp": "2026-10-26T20:21:56.291Z"
+    },
+    {
+      "signature": "5MhZ5GGH2wB2HM87nsWBaa4K34UJYyK4QeQdZfpPVAJPLZ44LoQy2wAYmsbGqXxRS1QCeDGPbTA9TsggdAFrg8Na",
+      "type": "MPL_AGENT_REGISTRATION",
+      "from": "H4SJqM5hbKC1qN7GNFq91JxjsRVfDao4gXvhewW8MqUp",
+      "to": "Metaplex Core Agent Identity Registry",
+      "agent_name": "sniper_agent",
+      "amount_sol": 0.01,
+      "amount_usdc": 2,
+      "slot": 515449455,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5MhZ5GGH2wB2HM87nsWBaa4K34UJYyK4QeQdZfpPVAJPLZ44LoQy2wAYmsbGqXxRS1QCeDGPbTA9TsggdAFrg8Na?cluster=devnet",
+      "timestamp": "2026-10-26T20:19:43.453Z"
+    },
+    {
+      "signature": "5VmWb6KSzMU75HXrdPqRWrBCjevijkXTYq2Yu9BvBbafxuBHKoWzsEWuZ3qjkHhvtdUJtYP49opmFLP1fTCR9t48",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolAudit Agent",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "slot": 515445723,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5VmWb6KSzMU75HXrdPqRWrBCjevijkXTYq2Yu9BvBbafxuBHKoWzsEWuZ3qjkHhvtdUJtYP49opmFLP1fTCR9t48?cluster=devnet",
+      "timestamp": "2026-10-26T20:04:53.254Z"
+    },
+    {
+      "signature": "3xRLo89jBF6vcBQxBFVj3idCQWFqr2tqQauaUBcBfnttFewRk9JHSFRnubt3ScnPJLqt7KR4TpFHyU8VnLcPXWWt",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolAudit Agent",
+      "amount_sol": 1.25,
+      "amount_usdc": 250,
+      "slot": 515431537,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3xRLo89jBF6vcBQxBFVj3idCQWFqr2tqQauaUBcBfnttFewRk9JHSFRnubt3ScnPJLqt7KR4TpFHyU8VnLcPXWWt?cluster=devnet",
+      "timestamp": "2026-10-26T19:08:35.512Z"
+    },
+    {
+      "signature": "5HqukLy82JzKY2H9eA76N1LLu8saCrybk9LMG8yngGUXGrZLPuVVHbos1KxZACf33c9RpK2F5SEmVigrbTscG23j",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolAudit Agent",
+      "amount_sol": 1,
+      "amount_usdc": 180,
+      "slot": 515431285,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/5HqukLy82JzKY2H9eA76N1LLu8saCrybk9LMG8yngGUXGrZLPuVVHbos1KxZACf33c9RpK2F5SEmVigrbTscG23j?cluster=devnet",
+      "timestamp": "2026-10-26T19:07:34.021Z"
+    },
+    {
+      "signature": "1ejD1yMw2hYWaktf8c6tM6wfVsS3ud7VVuVKYN9Pgrfv9sxAjqhADLW34SzAFDKoyjjB7VgbQYXYkyKRexUKDFH",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolAudit Agent",
+      "amount_sol": 1,
+      "amount_usdc": 150,
+      "slot": 515431151,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/1ejD1yMw2hYWaktf8c6tM6wfVsS3ud7VVuVKYN9Pgrfv9sxAjqhADLW34SzAFDKoyjjB7VgbQYXYkyKRexUKDFH?cluster=devnet",
+      "timestamp": "2026-10-26T19:07:02.448Z"
+    },
+    {
+      "signature": "2h2t7W1j65SUeT3cV9kr6zaMf55aPSUU2QEPH5DXQvZpGqC1tXzfq2LAJfsuWXtmQHxg3chhV9vw3WYJqXZ6WNMt",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "2ck8B3nHfhyvH9HLFrmV5jfN5H5wZLMAbzzWfQBUjfuv",
+      "agent_name": "SolAudit Agent",
+      "amount_sol": 1,
+      "amount_usdc": 150,
+      "slot": 515428544,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/2h2t7W1j65SUeT3cV9kr6zaMf55aPSUU2QEPH5DXQvZpGqC1tXzfq2LAJfsuWXtmQHxg3chhV9vw3WYJqXZ6WNMt?cluster=devnet",
+      "timestamp": "2026-10-26T18:56:42.170Z"
+    }
+  ]
+}

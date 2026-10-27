@@ -1,0 +1,14 @@
+{
+  "name": "solhire-x402-gateway",
+  "version": "1.0.0",
+  "description": "x402 Compute Gateway with Custom Facilitator for Agent Labor Market",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
