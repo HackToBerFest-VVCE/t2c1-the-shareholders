@@ -19,9 +19,9 @@ import {
   ExternalLink, Code2, AlertTriangle, ArrowUpRight, Play, CheckCircle2, History, Users, Shield, Plus
 } from 'lucide-react';
 
-const API_BASE = 'http://localhost:4001';
-const WS_BASE = 'ws://localhost:4001';
-const GATEWAY_BASE = 'http://localhost:4002';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4001';
+const WS_BASE = import.meta.env.VITE_WS_BASE || 'ws://localhost:4001';
+const GATEWAY_BASE = import.meta.env.VITE_GATEWAY_BASE || 'http://localhost:4002';
 
 export default function App() {
   const [stats, setStats] = useState(null);
