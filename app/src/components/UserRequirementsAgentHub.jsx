@@ -50,6 +50,13 @@ export default function UserRequirementsAgentHub({
       progress: 65,
       status: "MODELING",
       opsCount: 650
+    },
+    agent_dataforge_04: {
+      action: "Running 8-Stage Data Cleaning & IQR Outlier Capping",
+      subAction: "Purging null critical fields & deduping entity IDs",
+      progress: 92,
+      status: "CLEANING",
+      opsCount: 2840
     }
   });
 
@@ -79,6 +86,12 @@ export default function UserRequirementsAgentHub({
         { action: "Querying Solana DePIN telemetry stream", subAction: "Running geospatial H3 hex clustering algorithms", status: "SYNTHESIZING" },
         { action: "Generating DePIN proof-of-coverage statistical report", subAction: "Correlating hotspot packet transfer proof data", status: "CALCULATING" },
         { action: "Evaluating network reward emission curve", subAction: "Predicting 30-day validator yields and epoch splits", status: "FORECASTING" }
+      ],
+      agent_dataforge_04: [
+        { action: "Executing 8-Stage Data Cleaning & Normalization", subAction: "Removing duplicate entity keys and missing records", status: "CLEANING" },
+        { action: "Running IQR Outlier Capping & Distribution Bounds", subAction: "Preserving statistical variance within Q1/Q3 bounds", status: "CAPPING" },
+        { action: "Median Imputation & Category Normalization", subAction: "Transforming 154 messy string labels to canonical schema", status: "IMPUTING" },
+        { action: "Computing 3-Dimension Quality Score (95.2%)", subAction: "Committing verified SHA-256 transformation hash", status: "SCORING" }
       ]
     };
 
@@ -125,6 +138,12 @@ export default function UserRequirementsAgentHub({
       targetAgents: ["agent_backtest_02", "agent_code_01"]
     },
     {
+      label: "8-Stage Data Cleaning",
+      icon: "🔬",
+      text: "I need an autonomous data cleaning pipeline to clean and normalize this messy dataset with deduplication, null purging, category normalization, and IQR outlier capping.",
+      targetAgents: ["agent_dataforge_04", "agent_webdev_00"]
+    },
+    {
       label: "DePIN Telemetry & Modeling",
       icon: "📡",
       text: "I need an intelligent DePIN telemetry analyst to ingest geospatial IoT hotspot data, model coverage density, and forecast token reward emissions on Solana.",
@@ -163,7 +182,40 @@ export default function UserRequirementsAgentHub({
       const arbBot = getAgentInfo("agent_backtest_02");
       const depin = getAgentInfo("agent_research_03");
 
-      if (lower.includes("web") || lower.includes("dapp") || lower.includes("frontend") || lower.includes("ui") || lower.includes("demo") || lower.includes("site") || lower.includes("responsive")) {
+      const dataForge = getAgentInfo("agent_dataforge_04");
+
+      if (lower.includes("clean") || lower.includes("data") || lower.includes("dataset") || lower.includes("normalize") || lower.includes("outlier") || lower.includes("impute") || lower.includes("csv")) {
+        matched.push({
+          agent: dataForge,
+          matchScore: 99,
+          role: "Lead Data Transformation Engine",
+          followUpMessage: "Hello! I am DataForge AI. I analyzed your dataset requirements and will autonomously execute an 8-stage statistical cleaning pipeline: deduplication, null purging, label standardization, IQR outlier capping, median imputation, and quality scoring.",
+          plan: [
+            "Purge redundant duplicate records and empty critical identifiers",
+            "Normalize categorical schemas & coerce dirty numeric strings",
+            "Execute Q1/Q3 1.5x IQR statistical outlier boundary capping",
+            "Calculate composite 3-dimension quality score and generate verified report"
+          ],
+          eta: "14 seconds (8-Stage Pipeline)",
+          computeGasSol: 0.06,
+          computeGasUsdc: 12
+        });
+
+        matched.push({
+          agent: webDev,
+          matchScore: 94,
+          role: "Data Dashboard Specialist",
+          followUpMessage: "I will generate an interactive web-based data cleaning visualization report displaying before/after histograms and statistical scorecards.",
+          plan: [
+            "Build interactive distribution histograms",
+            "Render categorical frequency comparison tables",
+            "Deploy live data audit report URL"
+          ],
+          eta: "12 seconds",
+          computeGasSol: 0.08,
+          computeGasUsdc: 16
+        });
+      } else if (lower.includes("web") || lower.includes("dapp") || lower.includes("frontend") || lower.includes("ui") || lower.includes("demo") || lower.includes("site") || lower.includes("responsive")) {
         matched.push({
           agent: webDev,
           matchScore: 99,
@@ -288,6 +340,13 @@ export default function UserRequirementsAgentHub({
           computeGasUsdc: 16
         });
       }
+
+      // Rank & sort matched agents: Highest Match Score & Highest Reputation first so the user picks the most rated & accurate one
+      matched.sort((a, b) => {
+        const scoreA = (a.matchScore * 0.6) + ((a.agent.score || 9500) / 10000 * 40);
+        const scoreB = (b.matchScore * 0.6) + ((b.agent.score || 9500) / 10000 * 40);
+        return scoreB - scoreA;
+      });
 
       setMatchedAgents(matched);
       setIsMatching(false);
@@ -429,6 +488,18 @@ export default function UserRequirementsAgentHub({
               accent: "from-emerald-500/20 to-teal-500/20",
               badgeColor: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
               avatar: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=150&auto=format&fit=crop&q=80"
+            },
+            {
+              id: "agent_dataforge_04",
+              name: "DataForge AI",
+              tagline: "Data Cleaning & Normalization",
+              icon: ShieldCheck,
+              rateSol: 0.50,
+              rateUsdc: 100,
+              computeSol: 0.03,
+              accent: "from-cyan-500/20 to-teal-500/20",
+              badgeColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
+              avatar: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&auto=format&fit=crop&q=80"
             }
           ].map((agentMeta) => {
             const liveData = agentsLiveState[agentMeta.id] || {

@@ -13,6 +13,7 @@ import AgentTeamsMarketplace from './components/AgentTeamsMarketplace';
 import CustomTeamBuilder from './components/CustomTeamBuilder';
 import TeamExecutionDashboard from './components/TeamExecutionDashboard';
 import TrustRankLeaderboard from './components/TrustRankLeaderboard';
+import SolanaOnChainRegistry from './components/SolanaOnChainRegistry';
 import { 
   Bot, ShieldCheck, Activity, Layers, Terminal, Sparkles, 
   ExternalLink, Code2, AlertTriangle, ArrowUpRight, Play, CheckCircle2, History, Users, Shield, Plus
@@ -388,6 +389,21 @@ export default function App() {
           </button>
 
           <button
+            onClick={() => setActiveTab('onchain-registry')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
+              activeTab === 'onchain-registry'
+                ? 'bg-gradient-to-r from-[#14F195]/40 to-[#9945FF]/40 text-white border border-[#14F195]/60 shadow-lg shadow-[#14F195]/15'
+                : 'text-slate-400 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <Shield className="w-4 h-4 text-[#14F195]" />
+            <span>⛓️ On-Chain Registry</span>
+            <span className="badge-tag bg-[#14F195]/20 text-[#14F195] text-[10px] font-bold">
+              TRACK 2 ✓
+            </span>
+          </button>
+
+          <button
             onClick={() => setActiveTab('agents')}
             className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
               activeTab === 'agents'
@@ -510,6 +526,13 @@ export default function App() {
         {activeTab === 'topology' && (
           <div className="space-y-6">
             <MoneyFlowGraph events={moneyFlows} activeStep={isRunningDemo || isEvaluating} />
+          </div>
+        )}
+
+        {/* Tab: Solana On-Chain Registry — Track 2 Challenge-A */}
+        {activeTab === 'onchain-registry' && (
+          <div className="space-y-6">
+            <SolanaOnChainRegistry />
           </div>
         )}
 

@@ -5,6 +5,9 @@ import DeployDemoBanner from './DeployDemoBanner';
 export default function AgentRegistry({ agents, onSelectAgentForEval, onOpenDeploy, onDeployDemo, isDeploying }) {
   const [backedAgents, setBackedAgents] = useState({});
 
+  // Sort agents by score descending — highest rated appear first
+  const sortedAgents = [...(agents || [])].sort((a, b) => (b.score || 0) - (a.score || 0));
+
   const handleBackAgent = (agentId) => {
     setBackedAgents(prev => ({
       ...prev,
@@ -36,9 +39,15 @@ export default function AgentRegistry({ agents, onSelectAgentForEval, onOpenDepl
         </div>
 
         <div className="flex items-center space-x-3">
-          <div className="text-xs font-mono text-slate-400 bg-black/40 px-3.5 py-2 rounded-xl border border-white/5">
-            <span className="text-slate-500">Active Agents: </span>
-            <span className="text-[#14F195] font-bold">{(agents || []).length} Verified</span>
+          <div className="text-xs font-mono text-slate-400 bg-black/40 px-3.5 py-2 rounded-xl border border-white/5 space-y-0.5">
+            <div>
+              <span className="text-slate-500">Active Agents: </span>
+              <span className="text-[#14F195] font-bold">{sortedAgents.length} Verified</span>
+            </div>
+            <div className="text-amber-400 font-bold text-[10px] flex items-center space-x-1">
+              <span>⭐</span>
+              <span>Ranked by TrustScore — Highest Rated First</span>
+            </div>
           </div>
 
           {onOpenDeploy && (
@@ -53,18 +62,25 @@ export default function AgentRegistry({ agents, onSelectAgentForEval, onOpenDepl
         </div>
       </div>
 
-      {/* Agents Grid */}
+      {/* Agents Grid — Sorted by TrustScore (Highest First) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {(agents || []).map((agent) => {
+        {sortedAgents.map((agent, rankIdx) => {
           const userBacking = backedAgents[agent.id] || 0;
           const displayBacking = (agent.total_backing_usdc || 500) + userBacking;
           const repPercentage = (agent.score / 100).toFixed(1);
+
+          const rankMedal = rankIdx === 0 ? '🥇' : rankIdx === 1 ? '🥈' : rankIdx === 2 ? '🥉' : `#${rankIdx + 1}`;
 
           return (
             <div
               key={agent.id}
               className="glass-card rounded-2xl p-6 border border-white/10 flex flex-col justify-between hover:border-[#14F195]/40 transition-all relative overflow-hidden group"
             >
+              {/* Rank position indicator */}
+              <div className="absolute top-3 right-3 text-lg font-bold" title={`Rank #${rankIdx + 1} by TrustScore`}>
+                {rankMedal}
+              </div>
+
               {/* Top: Avatar, Name, Category */}
               <div>
                 <div className="flex items-start justify-between">
