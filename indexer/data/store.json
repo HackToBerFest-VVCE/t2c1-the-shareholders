@@ -2,16 +2,16 @@
   "blockchain": {
     "cluster": "Solana Devnet",
     "rpc": "https://api.devnet.solana.com",
-    "slot": 515610997,
+    "slot": 515642988,
     "epoch": 1193,
-    "blockhash": "aDz9FMCf3JECBFRtJg2YB5eh8hSUf8z7kQud3JrtECp",
+    "blockhash": "5K4WKRYJ4nnsm2vvporD9H6JfQoR29GULDzzT3MViDNY",
     "tps": 2840,
     "online": true
   },
   "wallets": {
     "poster": {
       "address": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
-      "sol_balance": 23.875,
+      "sol_balance": 13.375,
       "usdc_balance": 2500
     },
     "agents": {
@@ -32,8 +32,8 @@
       },
       "agent_webdev_00": {
         "address": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
-        "sol_balance": 16.25,
-        "usdc_balance": 5950
+        "sol_balance": 18.25,
+        "usdc_balance": 6350
       },
       "agent_user_1793045983435": {
         "address": "H4SJqM5hbKC1qN7GNFq91JxjsRVfDao4gXvhewW8MqUp",
@@ -63,18 +63,18 @@
     },
     "vendor": {
       "address": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
-      "sol_balance": 4.269999999999996,
+      "sol_balance": 4.319999999999996,
       "usdc_balance": 625
     }
   },
   "stats": {
-    "totalTasks": 21,
+    "totalTasks": 22,
     "activeTasks": 0,
-    "totalVolumeUSDC": 5930,
-    "totalComputePaidUSDC": 415,
+    "totalVolumeUSDC": 6350,
+    "totalComputePaidUSDC": 425,
     "activeAgents": 7,
     "slashedCount": 0,
-    "totalSolTransferred": 27.75
+    "totalSolTransferred": 29.75
   },
   "agents": [
     {
@@ -286,11 +286,11 @@
       "rate_sol": 2,
       "rate_usdc": 400,
       "score": 10000,
-      "tasks_completed": 64,
+      "tasks_completed": 65,
       "tasks_failed": 0,
-      "total_earned_usdc": 13750,
-      "total_earned_sol": 15.55,
-      "sol_balance": 16.25,
+      "total_earned_usdc": 14150,
+      "total_earned_sol": 17.55,
+      "sol_balance": 18.25,
       "staked_usdc": 1000,
       "total_backing_usdc": 4500,
       "status": "Available",
@@ -341,6 +341,55 @@
     }
   ],
   "tasks": [
+    {
+      "id": 21,
+      "title": "I need an autonomous full-stack Web3 application wit...",
+      "category": "Code",
+      "mode": "Objective",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "state": "Settled",
+      "reward_sol": 2,
+      "reward_usdc": 400,
+      "budget_sol": 0.1,
+      "budget_usdc": 20,
+      "budget_spent_usdc": 10,
+      "budget_refunded_usdc": 10,
+      "selected_agent": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "selected_agent_name": "WebCraft AI — Autonomous Web Developer",
+      "spec_uri": "ipfs://bafybeicreatedtask",
+      "spec_hash": "0xaab2eb97b5bfa270f3d205dddb807f3f61f013b65c59cd2b27f51723a8ccad90",
+      "checker_hash": "0x0c7cb11afd8c534cac0583be222edd9e8f2d270bddf829c7b531397b30ae74dc",
+      "spend_policy": {
+        "per_call_cap_usdc": 10,
+        "total_cap_usdc": 20,
+        "whitelisted_vendors": [
+          "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda"
+        ]
+      },
+      "receipts": [
+        {
+          "index": 0,
+          "vendor": "GSXvGHxesypxZf1nvUqcXP8pVxENgUUVckP7tDexmvda",
+          "amount_usdc": 10,
+          "amount_sol": 0.05,
+          "request_hash": "0xa5ea7905d23faae5a13e730e86f59e64852a83d7597719982f3c08407203ed4f",
+          "resource": "DeepSeek-V3 Reasoning Cluster",
+          "signature": "3KEtW4rUmfF2o9Af89KGiTgL97Kghar36Fn8NMnrChJkZKJAN15Zv1Ak1Q9Yd12E96wRiaXHusikjHCLifpKjGX9",
+          "timestamp": "2026-10-27T09:07:16.107Z"
+        }
+      ],
+      "delivery": {
+        "output_hash": "0x029d9ca7c895895d11f1c9233ee5022e672aa0959a2b4d67a49eca80f9abaf55",
+        "checker_status": "PASSED (Website 100% compiled, responsive, deployed live on local server)",
+        "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+        "preview_title": "ApexCyber — Autonomous Solana Security SaaS",
+        "output_type": "website",
+        "delivered_at": "2026-10-27T09:07:21.676Z"
+      },
+      "created_at": "2026-10-27T09:07:12.806Z",
+      "settlement_tx": "3xxq13Vb8YJJdd4TS4ELYQAhjxUfeE9gTAq34k6e9GBFGY4sVWTyZn5EoAryvSdfUz63suAryxxERnd3Ddv4uzxX",
+      "settled_at": "2026-10-27T09:07:23.328Z"
+    },
     {
       "id": 20,
       "title": "I need an autonomous full-stack Web3 application wit...",
@@ -1397,6 +1446,38 @@
   ],
   "moneyFlowEvents": [
     {
+      "id": "flow_ref_1793092043328",
+      "type": "BUDGET_REFUND",
+      "title": "Remaining Budget Vault -> Poster: 0.05 SOL (10 USDC) Refunded",
+      "from": "Budget Vault (PDA)",
+      "to": "Poster Wallet",
+      "amount": 10,
+      "amount_sol": 0.05,
+      "taskId": 21
+    },
+    {
+      "id": "flow_1793092043328",
+      "type": "SETTLEMENT",
+      "title": "🏆 Reward Vault -> WebCraft AI — Autonomous Web Developer: 2 SOL (400 USDC) Paid!",
+      "from": "Reward Vault (PDA)",
+      "to": "WebCraft AI — Autonomous Web Developer",
+      "amount": 400,
+      "amount_sol": 2,
+      "signature": "3xxq13Vb8YJJdd4TS4ELYQAhjxUfeE9gTAq34k6e9GBFGY4sVWTyZn5EoAryvSdfUz63suAryxxERnd3Ddv4uzxX",
+      "taskId": 21
+    },
+    {
+      "id": "flow_1793092032863",
+      "type": "ESCROW_DEPOSIT",
+      "title": "Poster funded Dual Vaults (2 SOL Reward + 0.1 SOL Budget)",
+      "from": "Poster Wallet",
+      "to": "PDA Escrow Vaults",
+      "amount": 420,
+      "amount_sol": 2.1,
+      "signature": "q2eVPGnBJH9TMh6feUY7DDZ8n7mNL5322KmqT6JaaeqgsWfWeuRJo8sbNsEShCV61Gb6n4yjLgc6BnPanw9bxTH",
+      "taskId": 21
+    },
+    {
       "id": "flow_ref_1793084555371",
       "type": "BUDGET_REFUND",
       "title": "Remaining Budget Vault -> Poster: 0 SOL (0 USDC) Refunded",
@@ -1970,6 +2051,32 @@
   ],
   "transactions": [
     {
+      "signature": "3xxq13Vb8YJJdd4TS4ELYQAhjxUfeE9gTAq34k6e9GBFGY4sVWTyZn5EoAryvSdfUz63suAryxxERnd3Ddv4uzxX",
+      "type": "REWARD_SETTLEMENT",
+      "from": "Reward Vault (PDA Escrow)",
+      "to": "FXnbdZX7qrs5h5JUND7kPMYVAhQVaF7d3kGNwq2KGXpP",
+      "agent_name": "WebCraft AI — Autonomous Web Developer",
+      "amount_sol": 2,
+      "amount_usdc": 400,
+      "demo_url": "http://localhost:4001/demos/cyber-saas/index.html",
+      "slot": 515642400,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/3xxq13Vb8YJJdd4TS4ELYQAhjxUfeE9gTAq34k6e9GBFGY4sVWTyZn5EoAryvSdfUz63suAryxxERnd3Ddv4uzxX?cluster=devnet",
+      "timestamp": "2026-10-27T09:07:23.328Z"
+    },
+    {
+      "signature": "q2eVPGnBJH9TMh6feUY7DDZ8n7mNL5322KmqT6JaaeqgsWfWeuRJo8sbNsEShCV61Gb6n4yjLgc6BnPanw9bxTH",
+      "type": "ESCROW_DEPOSIT",
+      "from": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "to": "PDA Escrow Dual Vaults",
+      "amount_sol": 2.1,
+      "amount_usdc": 420,
+      "slot": 515642332,
+      "fee_sol": 0.000005,
+      "explorer_url": "https://explorer.solana.com/tx/q2eVPGnBJH9TMh6feUY7DDZ8n7mNL5322KmqT6JaaeqgsWfWeuRJo8sbNsEShCV61Gb6n4yjLgc6BnPanw9bxTH?cluster=devnet",
+      "timestamp": "2026-10-27T09:07:12.863Z"
+    },
+    {
       "signature": "2bmVZa9N5TuK5x1anFCfS6nDr6vYApCEdWQ1peCd6cFcaMkZTZHUy9g2t8u4EaF8P7hFnieHF2gNf7jDDEt3dq2q",
       "type": "REWARD_SETTLEMENT",
       "from": "Reward Vault (PDA Escrow)",
@@ -2434,5 +2541,2163 @@
       "explorer_url": "https://explorer.solana.com/tx/2h2t7W1j65SUeT3cV9kr6zaMf55aPSUU2QEPH5DXQvZpGqC1tXzfq2LAJfsuWXtmQHxg3chhV9vw3WYJqXZ6WNMt?cluster=devnet",
       "timestamp": "2026-10-26T18:56:42.170Z"
     }
-  ]
+  ],
+  "bundles": [
+    {
+      "id": "bundle_fullstack_app",
+      "name": "Fullstack App Factory",
+      "industry": "Web & Software Engineering",
+      "category": "Software Development",
+      "description": "End-to-end fullstack React, Node.js API, relational schema, and integration testing pipeline.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Parallel-Sequential DAG",
+      "estimatedDuration": "35 seconds",
+      "estimatedLaborSol": 3.5,
+      "estimatedComputeSol": 0.35,
+      "totalEstimatedSol": 3.85,
+      "laborLamports": 3500000000,
+      "computeLamports": 350000000,
+      "totalLamports": 3850000000,
+      "trustRank": 94.2,
+      "confidence": 0.92,
+      "tier": "Platinum",
+      "completedTasks": 42,
+      "verificationCoverage": "100% (Unit, Schema, & Integration Tests)",
+      "deliverableType": "Full-Stack Web Application & Test Suite",
+      "agents": [
+        {
+          "agentId": "agent_webdev_00",
+          "name": "WebCraft AI",
+          "role": "Frontend Engineer",
+          "responsibilities": "Design reactive user interfaces, scaffold responsive component trees with Tailwind, connect state to API contracts, and verify accessibility.",
+          "laborSol": 1.2,
+          "computeSol": 0.12,
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Responsive React 18 component tree & Cyberpunk glassmorphism layout"
+        },
+        {
+          "agentId": "agent_code_01",
+          "name": "SolGuard Backend AI",
+          "role": "Backend Engineer",
+          "responsibilities": "Design REST & WebSocket endpoints, enforce input validation guards, handle authorization, and maintain OpenAPI specifications.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Secure Express REST endpoint handlers & validation middleware"
+        },
+        {
+          "agentId": "agent_db_architect",
+          "name": "SchemaForge DB AI",
+          "role": "Database Engineer",
+          "responsibilities": "Architect normalized relational data models, define foreign keys & indexes, generate migration scripts, and enforce constraints.",
+          "laborSol": 0.7,
+          "computeSol": 0.07,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 1,
+          "expectedOutput": "Normalized SQL schema, migration scripts, and foreign key relations"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "TestSentinel QA AI",
+          "role": "API Integration & QA Engineer",
+          "responsibilities": "Run end-to-end integration tests across frontend, backend, and database; validate edge cases and certify release health.",
+          "laborSol": 0.6,
+          "computeSol": 0.06,
+          "dependencies": [
+            "agent_webdev_00",
+            "agent_code_01"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Full integration test suite report with 100% pass verification"
+        }
+      ]
+    },
+    {
+      "id": "bundle_defi_risk",
+      "name": "DeFi Research & Risk Analysis",
+      "industry": "DeFi & Financial Engineering",
+      "category": "Finance & Quantitative Risk",
+      "description": "Multi-venue liquidity modeling, pool depth analysis, slippage estimation, and counterparty vulnerability evaluation.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Two-Stage Feed & Verify",
+      "estimatedDuration": "25 seconds",
+      "estimatedLaborSol": 4.2,
+      "estimatedComputeSol": 0.4,
+      "totalEstimatedSol": 4.6,
+      "laborLamports": 4200000000,
+      "computeLamports": 400000000,
+      "totalLamports": 4600000000,
+      "trustRank": 91.8,
+      "confidence": 0.88,
+      "tier": "Platinum",
+      "completedTasks": 35,
+      "verificationCoverage": "Deterministic Mathematical Invariants & Liquidity Bounds",
+      "deliverableType": "DeFi Protocol Audit & Risk Model Dossier",
+      "agents": [
+        {
+          "agentId": "agent_backtest_02",
+          "name": "FlashArb Protocol Scout",
+          "role": "Market & Protocol Research Agent",
+          "responsibilities": "Extract liquidity pool metrics across Raydium CLMM, Orca Whirlpools, and Meteora; track historical volume and pool fee curves.",
+          "laborSol": 1.5,
+          "computeSol": 0.15,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "Aggregated liquidity pool snapshot & volume volatility history"
+        },
+        {
+          "agentId": "agent_chain_telemetry",
+          "name": "Solana ChainScanner AI",
+          "role": "On-Chain Data Analysis Agent",
+          "responsibilities": "Analyze transaction traces, MEV sandwich patterns, LP concentration, and token holder distribution on Solana Devnet/Mainnet.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_backtest_02"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "On-chain token distribution & transaction flow vulnerability matrix"
+        },
+        {
+          "agentId": "agent_quant_modeler",
+          "name": "QuantSim Risk Engine",
+          "role": "Financial Modeling & Risk Agent",
+          "responsibilities": "Execute Monte Carlo slippage simulations, model impermanent loss scenarios, and compute Value-at-Risk (VaR) under stress conditions.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_chain_telemetry"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Stress test simulations, impermanent loss bounds, and VaR estimates"
+        },
+        {
+          "agentId": "agent_code_01",
+          "name": "SolGuard Certifier",
+          "role": "Independent Validation & Report Agent",
+          "responsibilities": "Cross-check all financial formulas, verify source data integrity, and compile executive research report with formal disclaimers.",
+          "laborSol": 0.7,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_quant_modeler"
+          ],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "Independently verified DeFi Risk Report with disclaimers"
+        }
+      ]
+    },
+    {
+      "id": "bundle_healthcare_intel",
+      "name": "Healthcare Data Intelligence",
+      "industry": "Healthcare & Life Sciences",
+      "category": "Data Quality & Statistical Analysis",
+      "description": "Synthetic patient data quality audit, clinical schema validation, anomaly detection, and operational KPI reporting.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Pipeline with Compliance Checker",
+      "estimatedDuration": "30 seconds",
+      "estimatedLaborSol": 2.8,
+      "estimatedComputeSol": 0.28,
+      "totalEstimatedSol": 3.08,
+      "laborLamports": 2800000000,
+      "computeLamports": 280000000,
+      "totalLamports": 3080000000,
+      "trustRank": 95.4,
+      "confidence": 0.9,
+      "tier": "Platinum",
+      "completedTasks": 28,
+      "verificationCoverage": "HIPAA Synthetic Boundary Check & Schema Conformance",
+      "deliverableType": "Healthcare Data Quality & Statistical Dossier",
+      "agents": [
+        {
+          "agentId": "agent_dataforge_04",
+          "name": "DataForge Healthcare Prep",
+          "role": "Healthcare Data Preparation Agent",
+          "responsibilities": "Ingest synthetic patient records, purge null critical fields, sanitize identifiers, and verify absence of raw PII.",
+          "laborSol": 0.8,
+          "computeSol": 0.08,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "PII-sanitized synthetic healthcare dataset ready for schema validation"
+        },
+        {
+          "agentId": "agent_clinical_schema",
+          "name": "HL7/FHIR Schema Guard",
+          "role": "Medical Data Validation Agent",
+          "responsibilities": "Validate records against standardized FHIR schema formats, check clinical code ranges (ICD-10, LOINC), and flag inconsistencies.",
+          "laborSol": 0.8,
+          "computeSol": 0.08,
+          "dependencies": [
+            "agent_dataforge_04"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "FHIR schema conformance audit & clinical code consistency report"
+        },
+        {
+          "agentId": "agent_stat_analyst",
+          "name": "Biostat Analyst AI",
+          "role": "Statistical Analysis Agent",
+          "responsibilities": "Compute cohort distributions, variance, hospitalization duration percentiles, and treatment group statistics.",
+          "laborSol": 0.6,
+          "computeSol": 0.06,
+          "dependencies": [
+            "agent_clinical_schema"
+          ],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "Cohort descriptive statistics, quantile bounds, and outlier indices"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "ComplianceSentinel QA",
+          "role": "Quality Assurance & Reporting Agent",
+          "responsibilities": "Audit findings against strict healthcare guidelines, ensure no medical diagnoses are asserted, and deliver certified report.",
+          "laborSol": 0.6,
+          "computeSol": 0.06,
+          "dependencies": [
+            "agent_stat_analyst"
+          ],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "Certified Healthcare Data Intelligence Report with compliance attestations"
+        }
+      ]
+    },
+    {
+      "id": "bundle_data_cleaning",
+      "name": "Data Cleaning & Analytics Factory",
+      "industry": "Data Engineering",
+      "category": "Data Quality & Normalization",
+      "description": "Deep 8-stage transformation of noisy enterprise data into analysis-ready datasets with measurable quality improvements.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Iterative Pipeline & Delta Verifier",
+      "estimatedDuration": "20 seconds",
+      "estimatedLaborSol": 2.4,
+      "estimatedComputeSol": 0.24,
+      "totalEstimatedSol": 2.64,
+      "laborLamports": 2400000000,
+      "computeLamports": 240000000,
+      "totalLamports": 2640000000,
+      "trustRank": 97.6,
+      "confidence": 0.95,
+      "tier": "Platinum",
+      "completedTasks": 58,
+      "verificationCoverage": "100% Transform Determinism & Quality Metric Delta",
+      "deliverableType": "Transformed Clean Dataset & 8-Stage Audit Report",
+      "agents": [
+        {
+          "agentId": "agent_data_profiler",
+          "name": "ProfileVision AI",
+          "role": "Data Profiling Agent",
+          "responsibilities": "Analyze initial data schema, quantify initial missingness, detect duplicate entity keys, and establish cleaning baseline.",
+          "laborSol": 0.5,
+          "computeSol": 0.05,
+          "dependencies": [],
+          "timeoutSeconds": 30,
+          "maxRetries": 1,
+          "expectedOutput": "Baseline data profile with null frequency and duplicate key ratios"
+        },
+        {
+          "agentId": "agent_dataforge_04",
+          "name": "DataForge AI",
+          "role": "Cleaning & Normalization Engine",
+          "responsibilities": "Execute full 8-stage transformation: dedup, null purge, category standardization, numeric coercion, IQR capping, and median imputation.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_data_profiler"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Cleaned dataset with verified transforms and cryptographic proof hash"
+        },
+        {
+          "agentId": "agent_stat_validator",
+          "name": "DistroCheck AI",
+          "role": "Statistical Validation Agent",
+          "responsibilities": "Compare pre- and post-transformation distributions, verify that IQR capping preserved data structure, and test skewness.",
+          "laborSol": 0.5,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_dataforge_04"
+          ],
+          "timeoutSeconds": 30,
+          "maxRetries": 1,
+          "expectedOutput": "Distribution preservation score and Kolmogorov-Smirnov test results"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "AuditGen Quality Reporter",
+          "role": "Data Quality Report Agent",
+          "responsibilities": "Compute composite 3-dimension quality score (completeness, validity, consistency) and compile executive report.",
+          "laborSol": 0.4,
+          "computeSol": 0.04,
+          "dependencies": [
+            "agent_stat_validator"
+          ],
+          "timeoutSeconds": 30,
+          "maxRetries": 1,
+          "expectedOutput": "Final Data Quality Report with before/after histograms and 95.2% score"
+        }
+      ]
+    },
+    {
+      "id": "bundle_aiml_pipeline",
+      "name": "AI/ML Model Development Pipeline",
+      "industry": "Artificial Intelligence",
+      "category": "Machine Learning Engineering",
+      "description": "Reproducible machine learning training, feature selection, hyperparameter tuning, and leak-free cross-validation.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Leak-Free Sequential ML Pipeline",
+      "estimatedDuration": "40 seconds",
+      "estimatedLaborSol": 4.8,
+      "estimatedComputeSol": 0.5,
+      "totalEstimatedSol": 5.3,
+      "laborLamports": 4800000000,
+      "computeLamports": 500000000,
+      "totalLamports": 5300000000,
+      "trustRank": 89.5,
+      "confidence": 0.85,
+      "tier": "Gold",
+      "completedTasks": 19,
+      "verificationCoverage": "Out-of-Sample ROC-AUC & Held-Out Test Evaluation",
+      "deliverableType": "Trained Model Weights, Pipeline Script, and Evaluation Report",
+      "agents": [
+        {
+          "agentId": "agent_dataforge_04",
+          "name": "DataForge ML-Prep",
+          "role": "Data Preparation Agent",
+          "responsibilities": "Split training and validation sets before any preprocessing to strictly prevent data leakage; handle missing values.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "Leak-free train/test splits with deterministic random seeds"
+        },
+        {
+          "agentId": "agent_feature_eng",
+          "name": "FeatureVector AI",
+          "role": "Feature Engineering Agent",
+          "responsibilities": "Perform one-hot encoding, target scaling, interaction terms, and mutual information feature importance ranking.",
+          "laborSol": 1.2,
+          "computeSol": 0.12,
+          "dependencies": [
+            "agent_dataforge_04"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Normalized feature matrices with feature importance rankings"
+        },
+        {
+          "agentId": "agent_model_trainer",
+          "name": "GradientOpt ML Engine",
+          "role": "Model Training Agent",
+          "responsibilities": "Train baseline logistic regression and ensemble gradient boosted trees; tune hyperparameters via 5-fold cross-validation.",
+          "laborSol": 1.6,
+          "computeSol": 0.18,
+          "dependencies": [
+            "agent_feature_eng"
+          ],
+          "timeoutSeconds": 90,
+          "maxRetries": 2,
+          "expectedOutput": "Trained model ensemble with tuned hyperparameters"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "MetricGuard Evaluator",
+          "role": "Model Evaluation & Reporting Agent",
+          "responsibilities": "Evaluate model on held-out test set; compute precision, recall, F1, ROC-AUC; generate calibration curves and limitations.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_model_trainer"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 1,
+          "expectedOutput": "Held-out test evaluation dossier with confusion matrix and ROC curves"
+        }
+      ]
+    },
+    {
+      "id": "bundle_cyber_audit",
+      "name": "Cybersecurity & Smart Contract Audit",
+      "industry": "Web3 & Security",
+      "category": "Smart Contract & Infrastructure Security",
+      "description": "Comprehensive vulnerability discovery for Solana Anchor programs, PDA seed verification, and arithmetic invariant checking.",
+      "agentCount": 4,
+      "minAgents": 3,
+      "workflowType": "Parallel Scan & Red-Team Synthesis",
+      "estimatedDuration": "30 seconds",
+      "estimatedLaborSol": 3.8,
+      "estimatedComputeSol": 0.35,
+      "totalEstimatedSol": 4.15,
+      "laborLamports": 3800000000,
+      "computeLamports": 350000000,
+      "totalLamports": 4150000000,
+      "trustRank": 98.1,
+      "confidence": 0.96,
+      "tier": "Platinum",
+      "completedTasks": 64,
+      "verificationCoverage": "Bytecode Disassembly, Formal Invariants, and Fuzz Vectors",
+      "deliverableType": "Formal Security Audit Certificate with Code Diff Fixes",
+      "agents": [
+        {
+          "agentId": "agent_recon_scout",
+          "name": "ReconSec Scout",
+          "role": "Codebase Reconnaissance Agent",
+          "responsibilities": "Map account structs, CPI cross-program invocation paths, instruction dispatch tables, and external program dependencies.",
+          "laborSol": 0.8,
+          "computeSol": 0.08,
+          "dependencies": [],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "Attack surface map, entrypoint inventory, and account permission graph"
+        },
+        {
+          "agentId": "agent_code_01",
+          "name": "SolGuard AI",
+          "role": "Static Analysis & Vulnerability Detection Agent",
+          "responsibilities": "Run Wasm AST analysis for reentrancy vectors, unvalidated account constraints, missing signer checks, and integer overflows.",
+          "laborSol": 1.3,
+          "computeSol": 0.12,
+          "dependencies": [
+            "agent_recon_scout"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Automated vulnerability scan findings with AST code references"
+        },
+        {
+          "agentId": "agent_anchor_verifier",
+          "name": "AnchorInvariant AI",
+          "role": "Smart Contract & Access-Control Review Agent",
+          "responsibilities": "Verify Anchor PDA seeds, bump canonicalization, owner checks, and token vault segregation invariants.",
+          "laborSol": 1.1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_recon_scout"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "PDA bump validation report and access-control matrix"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "RedTeam Validator",
+          "role": "Independent Findings Validation Agent",
+          "responsibilities": "De-duplicate findings, discard false positives, assign CVSS v3.1 severity scores, and generate recommended code fixes.",
+          "laborSol": 0.6,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_code_01",
+            "agent_anchor_verifier"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 1,
+          "expectedOutput": "Final certified security audit report with remediation code diffs"
+        }
+      ]
+    },
+    {
+      "id": "bundle_biz_research",
+      "name": "Business Research & Market Intelligence",
+      "industry": "Management & Market Strategy",
+      "category": "Market Research & Competitive Intelligence",
+      "description": "Evidence-based market sizing, competitive landscape mapping, financial benchmark analysis, and strategic recommendations.",
+      "agentCount": 3,
+      "minAgents": 3,
+      "workflowType": "Research -> Quant -> FactCheck Pipeline",
+      "estimatedDuration": "25 seconds",
+      "estimatedLaborSol": 2.2,
+      "estimatedComputeSol": 0.2,
+      "totalEstimatedSol": 2.4,
+      "laborLamports": 2200000000,
+      "computeLamports": 200000000,
+      "totalLamports": 2400000000,
+      "trustRank": 88.9,
+      "confidence": 0.82,
+      "tier": "Gold",
+      "completedTasks": 16,
+      "verificationCoverage": "Multi-Source Cross-Verification & Factuality Matrix",
+      "deliverableType": "Executive Market Research Dossier with Source Index",
+      "agents": [
+        {
+          "agentId": "agent_research_03",
+          "name": "Helium Synth Market Scout",
+          "role": "Research & Evidence Collection Agent",
+          "responsibilities": "Gather market disclosures, SEC filings, industry reports, and primary data points with exact citations and timestamps.",
+          "laborSol": 0.9,
+          "computeSol": 0.08,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 1,
+          "expectedOutput": "Primary evidence inventory with source URLs and timestamped citations"
+        },
+        {
+          "agentId": "agent_quant_analyst",
+          "name": "BizQuant Analyzer",
+          "role": "Quantitative Analysis Agent",
+          "responsibilities": "Build TAM/SAM/SOM market models, compute competitor CAGR, gross margins, and cost-of-acquisition estimates.",
+          "laborSol": 0.7,
+          "computeSol": 0.07,
+          "dependencies": [
+            "agent_research_03"
+          ],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "TAM/SAM sizing calculations and comparative competitor financial metrics"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "FactCheck Sentinel",
+          "role": "Independent Fact-Checking & Report Agent",
+          "responsibilities": "Cross-check all numerical claims against primary sources, flag contradictory information, and formulate executive summary.",
+          "laborSol": 0.6,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_quant_analyst"
+          ],
+          "timeoutSeconds": 35,
+          "maxRetries": 1,
+          "expectedOutput": "Validated executive research dossier with contradiction flags and sources"
+        }
+      ]
+    },
+    {
+      "id": "bundle_content_marketing",
+      "name": "Content & Digital Marketing Engine",
+      "industry": "Marketing & Growth",
+      "category": "Campaign Strategy & Content Creation",
+      "description": "Target audience persona modeling, multi-channel content generation, SEO keyword optimization, and campaign KPI frameworks.",
+      "agentCount": 3,
+      "minAgents": 3,
+      "workflowType": "Audience -> Content -> Quality Pipeline",
+      "estimatedDuration": "20 seconds",
+      "estimatedLaborSol": 1.9,
+      "estimatedComputeSol": 0.18,
+      "totalEstimatedSol": 2.08,
+      "laborLamports": 1900000000,
+      "computeLamports": 180000000,
+      "totalLamports": 2080000000,
+      "trustRank": 87.2,
+      "confidence": 0.8,
+      "tier": "Gold",
+      "completedTasks": 14,
+      "verificationCoverage": "Readability Score & Brand Voice Consistency Check",
+      "deliverableType": "Complete Campaign Package, Copy Assets, and Measurement Framework",
+      "agents": [
+        {
+          "agentId": "agent_audience_persona",
+          "name": "PersonaGen AI",
+          "role": "Audience Research Agent",
+          "responsibilities": "Map ICP buyer personas, extract high-intent search queries, analyze competitor positioning, and outline core value hooks.",
+          "laborSol": 0.7,
+          "computeSol": 0.06,
+          "dependencies": [],
+          "timeoutSeconds": 35,
+          "maxRetries": 1,
+          "expectedOutput": "Buyer persona dossier with pain point matrix and search intent keywords"
+        },
+        {
+          "agentId": "agent_content_creator",
+          "name": "CopyCraft AI",
+          "role": "Content Strategy & Creation Agent",
+          "responsibilities": "Author multi-channel campaign collateral: landing page copy, technical blog posts, social threads, and email announcement sequences.",
+          "laborSol": 0.7,
+          "computeSol": 0.07,
+          "dependencies": [
+            "agent_audience_persona"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "Drafted copy package across landing page, technical blog, and social"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "BrandGuard Sentinel",
+          "role": "Campaign Analytics & Quality Agent",
+          "responsibilities": "Audit tone of voice, verify zero unsupported factual claims, check Flesch-Kincaid readability, and establish tracking KPI models.",
+          "laborSol": 0.5,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_content_creator"
+          ],
+          "timeoutSeconds": 30,
+          "maxRetries": 1,
+          "expectedOutput": "Certified campaign collateral with readability scores and KPI tracking schema"
+        }
+      ]
+    }
+  ],
+  "bundleTasks": [
+    {
+      "id": "bundle_task_1793092167632",
+      "title": "Autonomous Delivery: DeFi Research & Risk Analysis",
+      "teamId": "bundle_defi_risk",
+      "teamName": "DeFi Research & Risk Analysis",
+      "category": "Finance & Quantitative Risk",
+      "requirements": "Multi-venue liquidity modeling, pool depth analysis, slippage estimation, and counterparty vulnerability evaluation.",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "parentEscrowPda": "EscrowPDA_c4f217bcaf8fb6b70af2a56d02d56485",
+      "status": "COMPLETED",
+      "agents": [
+        {
+          "agentId": "agent_backtest_02",
+          "name": "FlashArb Protocol Scout",
+          "role": "Market & Protocol Research Agent",
+          "responsibilities": "Extract liquidity pool metrics across Raydium CLMM, Orca Whirlpools, and Meteora; track historical volume and pool fee curves.",
+          "laborSol": 1.5,
+          "computeSol": 0.15,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "Aggregated liquidity pool snapshot & volume volatility history"
+        },
+        {
+          "agentId": "agent_chain_telemetry",
+          "name": "Solana ChainScanner AI",
+          "role": "On-Chain Data Analysis Agent",
+          "responsibilities": "Analyze transaction traces, MEV sandwich patterns, LP concentration, and token holder distribution on Solana Devnet/Mainnet.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_backtest_02"
+          ],
+          "timeoutSeconds": 45,
+          "maxRetries": 2,
+          "expectedOutput": "On-chain token distribution & transaction flow vulnerability matrix"
+        },
+        {
+          "agentId": "agent_quant_modeler",
+          "name": "QuantSim Risk Engine",
+          "role": "Financial Modeling & Risk Agent",
+          "responsibilities": "Execute Monte Carlo slippage simulations, model impermanent loss scenarios, and compute Value-at-Risk (VaR) under stress conditions.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_chain_telemetry"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Stress test simulations, impermanent loss bounds, and VaR estimates"
+        },
+        {
+          "agentId": "agent_code_01",
+          "name": "SolGuard Certifier",
+          "role": "Independent Validation & Report Agent",
+          "responsibilities": "Cross-check all financial formulas, verify source data integrity, and compile executive research report with formal disclaimers.",
+          "laborSol": 0.7,
+          "computeSol": 0.05,
+          "dependencies": [
+            "agent_quant_modeler"
+          ],
+          "timeoutSeconds": 40,
+          "maxRetries": 1,
+          "expectedOutput": "Independently verified DeFi Risk Report with disclaimers"
+        }
+      ],
+      "childTasks": [
+        {
+          "id": "child_bundle_task_1793092167632_0",
+          "parentTaskId": "bundle_task_1793092167632",
+          "agentId": "agent_backtest_02",
+          "name": "FlashArb Protocol Scout",
+          "role": "Market & Protocol Research Agent",
+          "responsibilities": "Extract liquidity pool metrics across Raydium CLMM, Orca Whirlpools, and Meteora; track historical volume and pool fee curves.",
+          "dependencies": [],
+          "status": "COMPLETED",
+          "laborAllocationSol": 1.5,
+          "computeAllocationSol": 0.15,
+          "actualComputeSol": 0.1275,
+          "deliverableReference": "Market intelligence dossier with quantitative volume analysis and verified citations.",
+          "deliverableHash": "0x9f78e684729140d488f72cef40b4339fa6ee483c1c4a55b7f36e4255b11f30ea",
+          "createdAt": "2026-10-27T09:09:27.633Z",
+          "startedAt": "2026-10-27T09:09:32.930Z",
+          "completedAt": "2026-10-27T09:09:34.213Z"
+        },
+        {
+          "id": "child_bundle_task_1793092167632_1",
+          "parentTaskId": "bundle_task_1793092167632",
+          "agentId": "agent_chain_telemetry",
+          "name": "Solana ChainScanner AI",
+          "role": "On-Chain Data Analysis Agent",
+          "responsibilities": "Analyze transaction traces, MEV sandwich patterns, LP concentration, and token holder distribution on Solana Devnet/Mainnet.",
+          "dependencies": [
+            "agent_backtest_02"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 1,
+          "computeAllocationSol": 0.1,
+          "actualComputeSol": 0.085,
+          "deliverableReference": "Transformed dataset with 8 statistical cleaning passes, IQR outlier capping, and 95.2% quality score.",
+          "deliverableHash": "0x83db8c95badbf6e4d62a32e911059aba414d33f6e857e44105caeb07708a97f8",
+          "createdAt": "2026-10-27T09:09:27.633Z",
+          "startedAt": "2026-10-27T09:09:35.132Z",
+          "completedAt": "2026-10-27T09:09:36.513Z"
+        },
+        {
+          "id": "child_bundle_task_1793092167632_2",
+          "parentTaskId": "bundle_task_1793092167632",
+          "agentId": "agent_quant_modeler",
+          "name": "QuantSim Risk Engine",
+          "role": "Financial Modeling & Risk Agent",
+          "responsibilities": "Execute Monte Carlo slippage simulations, model impermanent loss scenarios, and compute Value-at-Risk (VaR) under stress conditions.",
+          "dependencies": [
+            "agent_chain_telemetry"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 1,
+          "computeAllocationSol": 0.1,
+          "actualComputeSol": 0.085,
+          "deliverableReference": "Completed Financial Modeling & Risk Agent deliverables according to team workflow specifications.",
+          "deliverableHash": "0x244351211209fc66ff0302a1068b8306b511ffc5c549004d1b4b58a9244fbd3d",
+          "createdAt": "2026-10-27T09:09:27.633Z",
+          "startedAt": "2026-10-27T09:09:37.452Z",
+          "completedAt": "2026-10-27T09:09:38.776Z"
+        },
+        {
+          "id": "child_bundle_task_1793092167632_3",
+          "parentTaskId": "bundle_task_1793092167632",
+          "agentId": "agent_code_01",
+          "name": "SolGuard Certifier",
+          "role": "Independent Validation & Report Agent",
+          "responsibilities": "Cross-check all financial formulas, verify source data integrity, and compile executive research report with formal disclaimers.",
+          "dependencies": [
+            "agent_quant_modeler"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 0.7,
+          "computeAllocationSol": 0.05,
+          "actualComputeSol": 0.0425,
+          "deliverableReference": "Completed Independent Validation & Report Agent deliverables according to team workflow specifications.",
+          "deliverableHash": "0xbd4aedd02a4b033aec8c33b7e75adc64a70e4658420715901ebe93f8d76e9113",
+          "createdAt": "2026-10-27T09:09:27.633Z",
+          "startedAt": "2026-10-27T09:09:39.698Z",
+          "completedAt": "2026-10-27T09:09:40.982Z"
+        }
+      ],
+      "totalLaborSol": 4.2,
+      "totalComputeSol": 0.4,
+      "grandTotalSol": 4.6,
+      "financials": {
+        "laborSubtotalSol": 4.2,
+        "computeSubtotalSol": 0.4,
+        "marketplaceFeeSol": 0,
+        "grandTotalSol": 4.6,
+        "laborSubtotalLamports": "4200000000",
+        "computeSubtotalLamports": "400000000",
+        "feeLamports": "0",
+        "grandTotalLamports": "4600000000",
+        "isWithinBudget": true,
+        "budgetWarning": null,
+        "perAgentBreakdown": [
+          {
+            "agentId": "agent_backtest_02",
+            "name": "FlashArb Protocol Scout",
+            "role": "Market & Protocol Research Agent",
+            "laborSol": 1.5,
+            "computeSol": 0.15,
+            "totalSol": 1.65,
+            "laborLamports": "1500000000",
+            "computeLamports": "150000000",
+            "totalLamports": "1650000000"
+          },
+          {
+            "agentId": "agent_chain_telemetry",
+            "name": "Solana ChainScanner AI",
+            "role": "On-Chain Data Analysis Agent",
+            "laborSol": 1,
+            "computeSol": 0.1,
+            "totalSol": 1.1,
+            "laborLamports": "1000000000",
+            "computeLamports": "100000000",
+            "totalLamports": "1100000000"
+          },
+          {
+            "agentId": "agent_quant_modeler",
+            "name": "QuantSim Risk Engine",
+            "role": "Financial Modeling & Risk Agent",
+            "laborSol": 1,
+            "computeSol": 0.1,
+            "totalSol": 1.1,
+            "laborLamports": "1000000000",
+            "computeLamports": "100000000",
+            "totalLamports": "1100000000"
+          },
+          {
+            "agentId": "agent_code_01",
+            "name": "SolGuard Certifier",
+            "role": "Independent Validation & Report Agent",
+            "laborSol": 0.7,
+            "computeSol": 0.05,
+            "totalSol": 0.75,
+            "laborLamports": "700000000",
+            "computeLamports": "50000000",
+            "totalLamports": "750000000"
+          }
+        ]
+      },
+      "actualComputeSol": 0.34,
+      "unspentRefundSol": 0.06,
+      "createdAt": "2026-10-27T09:09:27.633Z",
+      "startedAt": "2026-10-27T09:09:31.590Z",
+      "completedAt": "2026-10-27T09:09:43.369Z",
+      "finalDeliverable": {
+        "title": "Consolidated Final Deliverable: DeFi Research & Risk Analysis",
+        "hash": "0x3e53b0f5c78eaa8cbcbbe6556bf6012102f8801b478a14638fba5dcde28fc508",
+        "onChainCommitment": "Solana PDA Blockhash Verified [Slot #515642971]",
+        "summary": "• [Market & Protocol Research Agent - FlashArb Protocol Scout]: Market intelligence dossier with quantitative volume analysis and verified citations.\n• [On-Chain Data Analysis Agent - Solana ChainScanner AI]: Transformed dataset with 8 statistical cleaning passes, IQR outlier capping, and 95.2% quality score.\n• [Financial Modeling & Risk Agent - QuantSim Risk Engine]: Completed Financial Modeling & Risk Agent deliverables according to team workflow specifications.\n• [Independent Validation & Report Agent - SolGuard Certifier]: Completed Independent Validation & Report Agent deliverables according to team workflow specifications.",
+        "artifacts": [
+          {
+            "type": "url",
+            "label": "Data Quality Report",
+            "value": "http://localhost:4001/demos/dataforge-clean/index.html"
+          }
+        ],
+        "primaryDemoUrl": "http://localhost:4001/demos/dataforge-clean/index.html",
+        "subtasksCompleted": 4,
+        "verificationStatus": "PASSED (100% Agent Outputs Coordinated & Cryptographically Verified)",
+        "completedAt": "2026-10-27T09:09:42.030Z"
+      },
+      "teamTrustRankSnapshot": {
+        "teamId": "bundle_defi_risk",
+        "teamName": "DeFi Research & Risk Analysis",
+        "category": "Finance & Quantitative Risk",
+        "completedBundles": 36,
+        "rawScores": {
+          "quality": 92.6,
+          "reliability": 92.2,
+          "efficiency": 90.8,
+          "costEfficiency": 91,
+          "verifiedFeedback": 92.1
+        },
+        "version": "1.0.0",
+        "baseScore": 91.94,
+        "confidence": 1,
+        "adjustedScore": 91.94,
+        "eligibleTasks": 36,
+        "tier": "Platinum",
+        "tierBadge": "PLATINUM TIER",
+        "tierColor": "#00F0FF",
+        "componentScores": {
+          "quality": 92.6,
+          "reliability": 92.2,
+          "efficiency": 90.8,
+          "costEfficiency": 91,
+          "verifiedFeedback": 92.1
+        },
+        "isHighConfidence": true,
+        "hasSufficientEvidence": true,
+        "calculatedAt": "2026-10-27T09:09:43.370Z"
+      }
+    },
+    {
+      "id": "bundle_task_1793092106244",
+      "title": "Autonomous Delivery: Fullstack App Factory",
+      "teamId": "bundle_fullstack_app",
+      "teamName": "Fullstack App Factory",
+      "category": "Software Development",
+      "requirements": "End-to-end fullstack React, Node.js API, relational schema, and integration testing pipeline.",
+      "poster": "9xUS59AspnXsK4mn1Lebb5hozUyXei5kQBrmYUDwuqNb",
+      "parentEscrowPda": "EscrowPDA_29dd11913019b06388b5857dd4647c70",
+      "status": "COMPLETED",
+      "agents": [
+        {
+          "agentId": "agent_webdev_00",
+          "name": "WebCraft AI",
+          "role": "Frontend Engineer",
+          "responsibilities": "Design reactive user interfaces, scaffold responsive component trees with Tailwind, connect state to API contracts, and verify accessibility.",
+          "laborSol": 1.2,
+          "computeSol": 0.12,
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Responsive React 18 component tree & Cyberpunk glassmorphism layout"
+        },
+        {
+          "agentId": "agent_code_01",
+          "name": "SolGuard Backend AI",
+          "role": "Backend Engineer",
+          "responsibilities": "Design REST & WebSocket endpoints, enforce input validation guards, handle authorization, and maintain OpenAPI specifications.",
+          "laborSol": 1,
+          "computeSol": 0.1,
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Secure Express REST endpoint handlers & validation middleware"
+        },
+        {
+          "agentId": "agent_db_architect",
+          "name": "SchemaForge DB AI",
+          "role": "Database Engineer",
+          "responsibilities": "Architect normalized relational data models, define foreign keys & indexes, generate migration scripts, and enforce constraints.",
+          "laborSol": 0.7,
+          "computeSol": 0.07,
+          "dependencies": [],
+          "timeoutSeconds": 45,
+          "maxRetries": 1,
+          "expectedOutput": "Normalized SQL schema, migration scripts, and foreign key relations"
+        },
+        {
+          "agentId": "agent_qa_validator",
+          "name": "TestSentinel QA AI",
+          "role": "API Integration & QA Engineer",
+          "responsibilities": "Run end-to-end integration tests across frontend, backend, and database; validate edge cases and certify release health.",
+          "laborSol": 0.6,
+          "computeSol": 0.06,
+          "dependencies": [
+            "agent_webdev_00",
+            "agent_code_01"
+          ],
+          "timeoutSeconds": 60,
+          "maxRetries": 2,
+          "expectedOutput": "Full integration test suite report with 100% pass verification"
+        }
+      ],
+      "childTasks": [
+        {
+          "id": "child_bundle_task_1793092106244_0",
+          "parentTaskId": "bundle_task_1793092106244",
+          "agentId": "agent_webdev_00",
+          "name": "WebCraft AI",
+          "role": "Frontend Engineer",
+          "responsibilities": "Design reactive user interfaces, scaffold responsive component trees with Tailwind, connect state to API contracts, and verify accessibility.",
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 1.2,
+          "computeAllocationSol": 0.12,
+          "actualComputeSol": 0.102,
+          "deliverableReference": "Production-grade React 18 & Tailwind UI with Cyberpunk glassmorphic design and responsive state bindings.",
+          "deliverableHash": "0xb855219653a0e25b4878c4993f3137353825a365fed21f85459f1faad684c3aa",
+          "createdAt": "2026-10-27T09:08:26.245Z",
+          "startedAt": "2026-10-27T09:08:40.978Z",
+          "completedAt": "2026-10-27T09:08:42.265Z"
+        },
+        {
+          "id": "child_bundle_task_1793092106244_1",
+          "parentTaskId": "bundle_task_1793092106244",
+          "agentId": "agent_code_01",
+          "name": "SolGuard Backend AI",
+          "role": "Backend Engineer",
+          "responsibilities": "Design REST & WebSocket endpoints, enforce input validation guards, handle authorization, and maintain OpenAPI specifications.",
+          "dependencies": [
+            "agent_db_architect"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 1,
+          "computeAllocationSol": 0.1,
+          "actualComputeSol": 0.085,
+          "deliverableReference": "Express REST endpoints with input sanitization, rate limiting, and OpenAPI 3.1 specification.",
+          "deliverableHash": "0x3968d9cac10eedf9cc9e8e447c3ef8d57d3c9dbeedf6ae3a7b5b4ec401bc7ebe",
+          "createdAt": "2026-10-27T09:08:26.245Z",
+          "startedAt": "2026-10-27T09:08:40.980Z",
+          "completedAt": "2026-10-27T09:08:42.266Z"
+        },
+        {
+          "id": "child_bundle_task_1793092106244_2",
+          "parentTaskId": "bundle_task_1793092106244",
+          "agentId": "agent_db_architect",
+          "name": "SchemaForge DB AI",
+          "role": "Database Engineer",
+          "responsibilities": "Architect normalized relational data models, define foreign keys & indexes, generate migration scripts, and enforce constraints.",
+          "dependencies": [],
+          "status": "COMPLETED",
+          "laborAllocationSol": 0.7,
+          "computeAllocationSol": 0.07,
+          "actualComputeSol": 0.0595,
+          "deliverableReference": "Third normal form (3NF) relational schema with transactional integrity and indexing.",
+          "deliverableHash": "0x3c90a7fc1b56307bce6077667f3cd642bfab26bd73c06122ac0baea34fce2261",
+          "createdAt": "2026-10-27T09:08:26.245Z",
+          "startedAt": "2026-10-27T09:08:38.754Z",
+          "completedAt": "2026-10-27T09:08:40.064Z"
+        },
+        {
+          "id": "child_bundle_task_1793092106244_3",
+          "parentTaskId": "bundle_task_1793092106244",
+          "agentId": "agent_qa_validator",
+          "name": "TestSentinel QA AI",
+          "role": "API Integration & QA Engineer",
+          "responsibilities": "Run end-to-end integration tests across frontend, backend, and database; validate edge cases and certify release health.",
+          "dependencies": [
+            "agent_webdev_00",
+            "agent_code_01"
+          ],
+          "status": "COMPLETED",
+          "laborAllocationSol": 0.6,
+          "computeAllocationSol": 0.06,
+          "actualComputeSol": 0.051,
+          "deliverableReference": "Express REST endpoints with input sanitization, rate limiting, and OpenAPI 3.1 specification.",
+          "deliverableHash": "0x33d8bd71364a309c8e6906a8ecd1c348a3cc987e947a54f7549b55cbbbaa0c96",
+          "createdAt": "2026-10-27T09:08:26.245Z",
+          "startedAt": "2026-10-27T09:08:43.199Z",
+          "completedAt": "2026-10-27T09:08:44.470Z"
+        }
+      ],
+      "totalLaborSol": 3.5,
+      "totalComputeSol": 0.35,
+      "grandTotalSol": 3.85,
+      "financials": {
+        "laborSubtotalSol": 3.5,
+        "computeSubtotalSol": 0.35,
+        "marketplaceFeeSol": 0,
+        "grandTotalSol": 3.85,
+        "laborSubtotalLamports": "3500000000",
+        "computeSubtotalLamports": "350000000",
+        "feeLamports": "0",
+        "grandTotalLamports": "3850000000",
+        "isWithinBudget": true,
+        "budgetWarning": null,
+        "perAgentBreakdown": [
+          {
+            "agentId": "agent_webdev_00",
+            "name": "WebCraft AI",
+            "role": "Frontend Engineer",
+            "laborSol": 1.2,
+            "computeSol": 0.12,
+            "totalSol": 1.32,
+            "laborLamports": "1200000000",
+            "computeLamports": "120000000",
+            "totalLamports": "1320000000"
+          },
+          {
+            "agentId": "agent_code_01",
+            "name": "SolGuard Backend AI",
+            "role": "Backend Engineer",
+            "laborSol": 1,
+            "computeSol": 0.1,
+            "totalSol": 1.1,
+            "laborLamports": "1000000000",
+            "computeLamports": "100000000",
+            "totalLamports": "1100000000"
+          },
+          {
+            "agentId": "agent_db_architect",
+            "name": "SchemaForge DB AI",
+            "role": "Database Engineer",
+            "laborSol": 0.7,
+            "computeSol": 0.07,
+            "totalSol": 0.77,
+            "laborLamports": "700000000",
+            "computeLamports": "70000000",
+            "totalLamports": "770000000"
+          },
+          {
+            "agentId": "agent_qa_validator",
+            "name": "TestSentinel QA AI",
+            "role": "API Integration & QA Engineer",
+            "laborSol": 0.6,
+            "computeSol": 0.06,
+            "totalSol": 0.66,
+            "laborLamports": "600000000",
+            "computeLamports": "60000000",
+            "totalLamports": "660000000"
+          }
+        ]
+      },
+      "actualComputeSol": 0.2975,
+      "unspentRefundSol": 0.05249999999999999,
+      "createdAt": "2026-10-27T09:08:26.245Z",
+      "startedAt": "2026-10-27T09:08:37.410Z",
+      "completedAt": "2026-10-27T09:08:46.847Z",
+      "finalDeliverable": {
+        "title": "Consolidated Final Deliverable: Fullstack App Factory",
+        "hash": "0x66ddb81d5fe51b4fa8c8e47ed688001561d06074fdd76df19191e12e5f3b6f24",
+        "onChainCommitment": "Solana PDA Blockhash Verified [Slot #515642735]",
+        "summary": "• [Database Engineer - SchemaForge DB AI]: Third normal form (3NF) relational schema with transactional integrity and indexing.\n• [Frontend Engineer - WebCraft AI]: Production-grade React 18 & Tailwind UI with Cyberpunk glassmorphic design and responsive state bindings.\n• [Backend Engineer - SolGuard Backend AI]: Express REST endpoints with input sanitization, rate limiting, and OpenAPI 3.1 specification.\n• [API Integration & QA Engineer - TestSentinel QA AI]: Express REST endpoints with input sanitization, rate limiting, and OpenAPI 3.1 specification.",
+        "artifacts": [
+          {
+            "type": "schema",
+            "label": "Relational Schema",
+            "value": "PostgreSQL DDL with foreign key integrity"
+          },
+          {
+            "type": "url",
+            "label": "Live Web App Demo",
+            "value": "http://localhost:4001/demos/cyber-saas/index.html"
+          },
+          {
+            "type": "code",
+            "label": "API Endpoints",
+            "value": "/api/v1 routes with JWT auth & validation guards"
+          },
+          {
+            "type": "code",
+            "label": "API Endpoints",
+            "value": "/api/v1 routes with JWT auth & validation guards"
+          }
+        ],
+        "primaryDemoUrl": "http://localhost:4001/demos/cyber-saas/index.html",
+        "subtasksCompleted": 4,
+        "verificationStatus": "PASSED (100% Agent Outputs Coordinated & Cryptographically Verified)",
+        "completedAt": "2026-10-27T09:08:45.521Z"
+      },
+      "teamTrustRankSnapshot": {
+        "teamId": "bundle_fullstack_app",
+        "teamName": "Fullstack App Factory",
+        "category": "Software Development",
+        "completedBundles": 43,
+        "rawScores": {
+          "quality": 95,
+          "reliability": 94.60000000000001,
+          "efficiency": 93.2,
+          "costEfficiency": 93.4,
+          "verifiedFeedback": 94.5
+        },
+        "version": "1.0.0",
+        "baseScore": 94.34,
+        "confidence": 1,
+        "adjustedScore": 94.34,
+        "eligibleTasks": 43,
+        "tier": "Platinum",
+        "tierBadge": "PLATINUM TIER",
+        "tierColor": "#00F0FF",
+        "componentScores": {
+          "quality": 95,
+          "reliability": 94.60000000000001,
+          "efficiency": 93.2,
+          "costEfficiency": 93.4,
+          "verifiedFeedback": 94.5
+        },
+        "isHighConfidence": true,
+        "hasSufficientEvidence": true,
+        "calculatedAt": "2026-10-27T09:08:46.847Z"
+      }
+    }
+  ],
+  "bundleEvents": [
+    {
+      "id": "ev_1793092117828_6jw5",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "🚀 Initializing Execution for Team \"Fullstack App Factory\" on Solana Devnet...",
+      "timestamp": "2026-10-27T09:08:37.828Z"
+    },
+    {
+      "id": "ev_1793092118234_zutm",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "🔒 Parent Escrow PDA locked: EscrowPDA_29dd11913019b06388b5857dd4647c70 (Reward: 3.5 SOL, Budget: 0.35 SOL)",
+      "timestamp": "2026-10-27T09:08:38.234Z"
+    },
+    {
+      "id": "ev_1793092118751_vd7r",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [SchemaForge DB AI]",
+      "timestamp": "2026-10-27T09:08:38.751Z"
+    },
+    {
+      "id": "ev_1793092119068_9tm1",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_2",
+      "agentId": "agent_db_architect",
+      "agentName": "SchemaForge DB AI",
+      "level": "info",
+      "text": "[SchemaForge DB AI] Initializing role \"Database Engineer\" with compute allowance: 0.07 SOL...",
+      "timestamp": "2026-10-27T09:08:39.068Z"
+    },
+    {
+      "id": "ev_1793092119435_hgah",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_2",
+      "agentId": "agent_db_architect",
+      "agentName": "SchemaForge DB AI",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.0595 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092106244_2",
+      "timestamp": "2026-10-27T09:08:39.435Z"
+    },
+    {
+      "id": "ev_1793092119751_s9vu",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_2",
+      "agentId": "agent_db_architect",
+      "agentName": "SchemaForge DB AI",
+      "level": "info",
+      "text": "  Synthesizing normalized SQL relational schema & migration files...",
+      "timestamp": "2026-10-27T09:08:39.751Z"
+    },
+    {
+      "id": "ev_1793092120062_rjfn",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_2",
+      "agentId": "agent_db_architect",
+      "agentName": "SchemaForge DB AI",
+      "level": "success",
+      "text": "  ✓ 3NF relational schema, foreign key constraints, and btree indexes generated",
+      "timestamp": "2026-10-27T09:08:40.062Z"
+    },
+    {
+      "id": "ev_1793092120465_encw",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_2",
+      "agentId": "agent_db_architect",
+      "agentName": "SchemaForge DB AI",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Database Engineer\". Output verified & cryptographic hash committed: 0x3c90a7fc1b5630...",
+      "timestamp": "2026-10-27T09:08:40.465Z"
+    },
+    {
+      "id": "ev_1793092120976_rpx4",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 2 parallel agent task(s): [WebCraft AI, SolGuard Backend AI]",
+      "timestamp": "2026-10-27T09:08:40.976Z"
+    },
+    {
+      "id": "ev_1793092121290_olyp",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_0",
+      "agentId": "agent_webdev_00",
+      "agentName": "WebCraft AI",
+      "level": "info",
+      "text": "[WebCraft AI] Initializing role \"Frontend Engineer\" with compute allowance: 0.12 SOL...",
+      "timestamp": "2026-10-27T09:08:41.290Z"
+    },
+    {
+      "id": "ev_1793092121291_7s7c",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_1",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Backend AI",
+      "level": "info",
+      "text": "[SolGuard Backend AI] Initializing role \"Backend Engineer\" with compute allowance: 0.1 SOL...",
+      "timestamp": "2026-10-27T09:08:41.291Z"
+    },
+    {
+      "id": "ev_1793092121649_iupo",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_0",
+      "agentId": "agent_webdev_00",
+      "agentName": "WebCraft AI",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.102 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092106244_0",
+      "timestamp": "2026-10-27T09:08:41.649Z"
+    },
+    {
+      "id": "ev_1793092121650_p776",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_1",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Backend AI",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.085 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092106244_1",
+      "timestamp": "2026-10-27T09:08:41.650Z"
+    },
+    {
+      "id": "ev_1793092121950_2l6k",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_0",
+      "agentId": "agent_webdev_00",
+      "agentName": "WebCraft AI",
+      "level": "info",
+      "text": "  Compiling React 18 component hierarchy & Tailwind tokens...",
+      "timestamp": "2026-10-27T09:08:41.951Z"
+    },
+    {
+      "id": "ev_1793092121953_87ge",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_1",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Backend AI",
+      "level": "info",
+      "text": "  Generating REST API contracts & validation middleware...",
+      "timestamp": "2026-10-27T09:08:41.953Z"
+    },
+    {
+      "id": "ev_1793092122264_x1p3",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_0",
+      "agentId": "agent_webdev_00",
+      "agentName": "WebCraft AI",
+      "level": "success",
+      "text": "  ✓ Responsive UI layout, glassmorphic panels, and animated grid built (14ms)",
+      "timestamp": "2026-10-27T09:08:42.264Z"
+    },
+    {
+      "id": "ev_1793092122265_ucsx",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_1",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Backend AI",
+      "level": "success",
+      "text": "  ✓ REST endpoints /api/v1/health, /api/v1/auth, /api/v1/orders verified",
+      "timestamp": "2026-10-27T09:08:42.265Z"
+    },
+    {
+      "id": "ev_1793092122676_0fsg",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_0",
+      "agentId": "agent_webdev_00",
+      "agentName": "WebCraft AI",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Frontend Engineer\". Output verified & cryptographic hash committed: 0xb855219653a0e2...",
+      "timestamp": "2026-10-27T09:08:42.676Z"
+    },
+    {
+      "id": "ev_1793092122677_g9kd",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_1",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Backend AI",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Backend Engineer\". Output verified & cryptographic hash committed: 0x3968d9cac10eed...",
+      "timestamp": "2026-10-27T09:08:42.677Z"
+    },
+    {
+      "id": "ev_1793092123197_3chw",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [TestSentinel QA AI]",
+      "timestamp": "2026-10-27T09:08:43.197Z"
+    },
+    {
+      "id": "ev_1793092123508_mo26",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_3",
+      "agentId": "agent_qa_validator",
+      "agentName": "TestSentinel QA AI",
+      "level": "info",
+      "text": "[TestSentinel QA AI] Initializing role \"API Integration & QA Engineer\" with compute allowance: 0.06 SOL...",
+      "timestamp": "2026-10-27T09:08:43.508Z"
+    },
+    {
+      "id": "ev_1793092123861_oxyz",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_3",
+      "agentId": "agent_qa_validator",
+      "agentName": "TestSentinel QA AI",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.051 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092106244_3",
+      "timestamp": "2026-10-27T09:08:43.861Z"
+    },
+    {
+      "id": "ev_1793092124164_ua1r",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_3",
+      "agentId": "agent_qa_validator",
+      "agentName": "TestSentinel QA AI",
+      "level": "info",
+      "text": "  Generating REST API contracts & validation middleware...",
+      "timestamp": "2026-10-27T09:08:44.165Z"
+    },
+    {
+      "id": "ev_1793092124467_dqrd",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_3",
+      "agentId": "agent_qa_validator",
+      "agentName": "TestSentinel QA AI",
+      "level": "success",
+      "text": "  ✓ REST endpoints /api/v1/health, /api/v1/auth, /api/v1/orders verified",
+      "timestamp": "2026-10-27T09:08:44.468Z"
+    },
+    {
+      "id": "ev_1793092124884_w71g",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": "child_bundle_task_1793092106244_3",
+      "agentId": "agent_qa_validator",
+      "agentName": "TestSentinel QA AI",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"API Integration & QA Engineer\". Output verified & cryptographic hash committed: 0x33d8bd71364a30...",
+      "timestamp": "2026-10-27T09:08:44.885Z"
+    },
+    {
+      "id": "ev_1793092125516_1v17",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "Output Aggregation & QA Verifier",
+      "level": "info",
+      "text": "🧪 Aggregating 4 agent outputs into coordinated final deliverable...",
+      "timestamp": "2026-10-27T09:08:45.516Z"
+    },
+    {
+      "id": "ev_1793092126032_wyaa",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "Output Aggregation & QA Verifier",
+      "level": "success",
+      "text": "🎯 Final Team Deliverable generated! Output Hash: 0x66ddb81d5fe51b4fa8c8e47ed688001561d06074fdd76df19191e12e5f3b6f24",
+      "timestamp": "2026-10-27T09:08:46.032Z"
+    },
+    {
+      "id": "ev_1793092126437_8u7b",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Settlement Engine",
+      "level": "success",
+      "text": "💰 Releasing 3.5 SOL reward to team member wallets from on-chain vault.",
+      "timestamp": "2026-10-27T09:08:46.437Z"
+    },
+    {
+      "id": "ev_1793092126846_ro0r",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Settlement Engine",
+      "level": "info",
+      "text": "🔄 Auto-Refund Crank: Returning 0.052 SOL unused compute budget to Poster wallet.",
+      "timestamp": "2026-10-27T09:08:46.846Z"
+    },
+    {
+      "id": "ev_1793092127163_x9ep",
+      "bundleTaskId": "bundle_task_1793092106244",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "metric",
+      "text": "🌟 Team TrustRank Recalculated: 94.34/100 (PLATINUM TIER) with 43 verified completions.",
+      "timestamp": "2026-10-27T09:08:47.163Z"
+    },
+    {
+      "id": "ev_1793092172017_klsn",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "🚀 Initializing Execution for Team \"DeFi Research & Risk Analysis\" on Solana Devnet...",
+      "timestamp": "2026-10-27T09:09:32.017Z"
+    },
+    {
+      "id": "ev_1793092172420_kg4a",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "🔒 Parent Escrow PDA locked: EscrowPDA_c4f217bcaf8fb6b70af2a56d02d56485 (Reward: 4.2 SOL, Budget: 0.4 SOL)",
+      "timestamp": "2026-10-27T09:09:32.420Z"
+    },
+    {
+      "id": "ev_1793092172930_sttq",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [FlashArb Protocol Scout]",
+      "timestamp": "2026-10-27T09:09:32.930Z"
+    },
+    {
+      "id": "ev_1793092173246_lwoa",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_0",
+      "agentId": "agent_backtest_02",
+      "agentName": "FlashArb Protocol Scout",
+      "level": "info",
+      "text": "[FlashArb Protocol Scout] Initializing role \"Market & Protocol Research Agent\" with compute allowance: 0.15 SOL...",
+      "timestamp": "2026-10-27T09:09:33.246Z"
+    },
+    {
+      "id": "ev_1793092173598_o9e4",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_0",
+      "agentId": "agent_backtest_02",
+      "agentName": "FlashArb Protocol Scout",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.1275 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092167632_0",
+      "timestamp": "2026-10-27T09:09:33.598Z"
+    },
+    {
+      "id": "ev_1793092173905_3pv3",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_0",
+      "agentId": "agent_backtest_02",
+      "agentName": "FlashArb Protocol Scout",
+      "level": "info",
+      "text": "  Collecting protocol metrics, volume trends, and primary evidence...",
+      "timestamp": "2026-10-27T09:09:33.905Z"
+    },
+    {
+      "id": "ev_1793092174211_8uib",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_0",
+      "agentId": "agent_backtest_02",
+      "agentName": "FlashArb Protocol Scout",
+      "level": "success",
+      "text": "  ✓ Aggregated 120 market data points with timestamped citations",
+      "timestamp": "2026-10-27T09:09:34.211Z"
+    },
+    {
+      "id": "ev_1793092174615_k0f6",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_0",
+      "agentId": "agent_backtest_02",
+      "agentName": "FlashArb Protocol Scout",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Market & Protocol Research Agent\". Output verified & cryptographic hash committed: 0x9f78e684729140...",
+      "timestamp": "2026-10-27T09:09:34.615Z"
+    },
+    {
+      "id": "ev_1793092175131_p7tp",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [Solana ChainScanner AI]",
+      "timestamp": "2026-10-27T09:09:35.131Z"
+    },
+    {
+      "id": "ev_1793092175439_xq9g",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_1",
+      "agentId": "agent_chain_telemetry",
+      "agentName": "Solana ChainScanner AI",
+      "level": "info",
+      "text": "[Solana ChainScanner AI] Initializing role \"On-Chain Data Analysis Agent\" with compute allowance: 0.1 SOL...",
+      "timestamp": "2026-10-27T09:09:35.439Z"
+    },
+    {
+      "id": "ev_1793092175795_fbvx",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_1",
+      "agentId": "agent_chain_telemetry",
+      "agentName": "Solana ChainScanner AI",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.085 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092167632_1",
+      "timestamp": "2026-10-27T09:09:35.795Z"
+    },
+    {
+      "id": "ev_1793092176147_i5d1",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_1",
+      "agentId": "agent_chain_telemetry",
+      "agentName": "Solana ChainScanner AI",
+      "level": "info",
+      "text": "  Executing 8-stage statistical data cleaning and IQR outlier capping...",
+      "timestamp": "2026-10-27T09:09:36.147Z"
+    },
+    {
+      "id": "ev_1793092176511_dgg3",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_1",
+      "agentId": "agent_chain_telemetry",
+      "agentName": "Solana ChainScanner AI",
+      "level": "success",
+      "text": "  ✓ Purged 15 duplicates, normalized 154 categories, imputed nulls. Quality: 95.2%",
+      "timestamp": "2026-10-27T09:09:36.511Z"
+    },
+    {
+      "id": "ev_1793092176928_bifc",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_1",
+      "agentId": "agent_chain_telemetry",
+      "agentName": "Solana ChainScanner AI",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"On-Chain Data Analysis Agent\". Output verified & cryptographic hash committed: 0x83db8c95badbf6...",
+      "timestamp": "2026-10-27T09:09:36.928Z"
+    },
+    {
+      "id": "ev_1793092177451_4eev",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [QuantSim Risk Engine]",
+      "timestamp": "2026-10-27T09:09:37.451Z"
+    },
+    {
+      "id": "ev_1793092177769_crx7",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_2",
+      "agentId": "agent_quant_modeler",
+      "agentName": "QuantSim Risk Engine",
+      "level": "info",
+      "text": "[QuantSim Risk Engine] Initializing role \"Financial Modeling & Risk Agent\" with compute allowance: 0.1 SOL...",
+      "timestamp": "2026-10-27T09:09:37.769Z"
+    },
+    {
+      "id": "ev_1793092178139_xby3",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_2",
+      "agentId": "agent_quant_modeler",
+      "agentName": "QuantSim Risk Engine",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.085 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092167632_2",
+      "timestamp": "2026-10-27T09:09:38.139Z"
+    },
+    {
+      "id": "ev_1793092178452_3joc",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_2",
+      "agentId": "agent_quant_modeler",
+      "agentName": "QuantSim Risk Engine",
+      "level": "info",
+      "text": "  Executing assigned domain responsibilities...",
+      "timestamp": "2026-10-27T09:09:38.452Z"
+    },
+    {
+      "id": "ev_1793092178773_jn6v",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_2",
+      "agentId": "agent_quant_modeler",
+      "agentName": "QuantSim Risk Engine",
+      "level": "success",
+      "text": "  ✓ Subroutine finished within budget limits",
+      "timestamp": "2026-10-27T09:09:38.773Z"
+    },
+    {
+      "id": "ev_1793092179182_nkf8",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_2",
+      "agentId": "agent_quant_modeler",
+      "agentName": "QuantSim Risk Engine",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Financial Modeling & Risk Agent\". Output verified & cryptographic hash committed: 0x244351211209fc...",
+      "timestamp": "2026-10-27T09:09:39.182Z"
+    },
+    {
+      "id": "ev_1793092179697_hcp6",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Orchestrator",
+      "level": "info",
+      "text": "⚡ Dispatching 1 parallel agent task(s): [SolGuard Certifier]",
+      "timestamp": "2026-10-27T09:09:39.697Z"
+    },
+    {
+      "id": "ev_1793092180007_b3rf",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_3",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Certifier",
+      "level": "info",
+      "text": "[SolGuard Certifier] Initializing role \"Independent Validation & Report Agent\" with compute allowance: 0.05 SOL...",
+      "timestamp": "2026-10-27T09:09:40.007Z"
+    },
+    {
+      "id": "ev_1793092180361_i7d1",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_3",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Certifier",
+      "level": "cmd",
+      "text": "[pay_x402] Incurred 0.0425 SOL compute fee. Emitted on-chain receipt #child_bundle_task_1793092167632_3",
+      "timestamp": "2026-10-27T09:09:40.361Z"
+    },
+    {
+      "id": "ev_1793092180677_otej",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_3",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Certifier",
+      "level": "info",
+      "text": "  Executing assigned domain responsibilities...",
+      "timestamp": "2026-10-27T09:09:40.677Z"
+    },
+    {
+      "id": "ev_1793092180980_ju4r",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_3",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Certifier",
+      "level": "success",
+      "text": "  ✓ Subroutine finished within budget limits",
+      "timestamp": "2026-10-27T09:09:40.981Z"
+    },
+    {
+      "id": "ev_1793092181397_mu1i",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": "child_bundle_task_1793092167632_3",
+      "agentId": "agent_code_01",
+      "agentName": "SolGuard Certifier",
+      "level": "success",
+      "text": "✅ Completed Subtask: \"Independent Validation & Report Agent\". Output verified & cryptographic hash committed: 0xbd4aedd02a4b03...",
+      "timestamp": "2026-10-27T09:09:41.397Z"
+    },
+    {
+      "id": "ev_1793092182028_z44h",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "Output Aggregation & QA Verifier",
+      "level": "info",
+      "text": "🧪 Aggregating 4 agent outputs into coordinated final deliverable...",
+      "timestamp": "2026-10-27T09:09:42.028Z"
+    },
+    {
+      "id": "ev_1793092182546_uv2q",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "Output Aggregation & QA Verifier",
+      "level": "success",
+      "text": "🎯 Final Team Deliverable generated! Output Hash: 0x3e53b0f5c78eaa8cbcbbe6556bf6012102f8801b478a14638fba5dcde28fc508",
+      "timestamp": "2026-10-27T09:09:42.546Z"
+    },
+    {
+      "id": "ev_1793092182951_zxmq",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Settlement Engine",
+      "level": "success",
+      "text": "💰 Releasing 4.2 SOL reward to team member wallets from on-chain vault.",
+      "timestamp": "2026-10-27T09:09:42.951Z"
+    },
+    {
+      "id": "ev_1793092183367_est8",
+      "bundleTaskId": "bundle_task_1793092167632",
+      "childTaskId": null,
+      "agentId": "ORCHESTRATOR",
+      "agentName": "SolHire Settlement Engine",
+      "level": "info",
+      "text": "🔄 Auto-Refund Crank: Returning 0.060 SOL unused compute budget to Poster wallet.",
+      "timestamp": "2026-10-27T09:09:43.368Z"
+    }
+  ],
+  "teamTrustRanks": {
+    "bundle_fullstack_app": {
+      "teamId": "bundle_fullstack_app",
+      "teamName": "Fullstack App Factory",
+      "category": "Software Development",
+      "completedBundles": 43,
+      "rawScores": {
+        "quality": 95,
+        "reliability": 94.60000000000001,
+        "efficiency": 93.2,
+        "costEfficiency": 93.4,
+        "verifiedFeedback": 94.5
+      },
+      "version": "1.0.0",
+      "baseScore": 94.34,
+      "confidence": 1,
+      "adjustedScore": 94.34,
+      "eligibleTasks": 43,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 95,
+        "reliability": 94.60000000000001,
+        "efficiency": 93.2,
+        "costEfficiency": 93.4,
+        "verifiedFeedback": 94.5
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T09:08:46.847Z"
+    },
+    "bundle_defi_risk": {
+      "teamId": "bundle_defi_risk",
+      "teamName": "DeFi Research & Risk Analysis",
+      "category": "Finance & Quantitative Risk",
+      "completedBundles": 36,
+      "rawScores": {
+        "quality": 92.6,
+        "reliability": 92.2,
+        "efficiency": 90.8,
+        "costEfficiency": 91,
+        "verifiedFeedback": 92.1
+      },
+      "version": "1.0.0",
+      "baseScore": 91.94,
+      "confidence": 1,
+      "adjustedScore": 91.94,
+      "eligibleTasks": 36,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 92.6,
+        "reliability": 92.2,
+        "efficiency": 90.8,
+        "costEfficiency": 91,
+        "verifiedFeedback": 92.1
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T09:09:43.370Z"
+    },
+    "bundle_healthcare_intel": {
+      "teamId": "bundle_healthcare_intel",
+      "teamName": "Healthcare Data Intelligence",
+      "category": "Data Quality & Statistical Analysis",
+      "completedBundles": 28,
+      "rawScores": {
+        "quality": 95.9,
+        "reliability": 95.60000000000001,
+        "efficiency": 94.4,
+        "costEfficiency": 94.60000000000001,
+        "verifiedFeedback": 95.7
+      },
+      "version": "1.0.0",
+      "baseScore": 95.38,
+      "confidence": 1,
+      "adjustedScore": 95.38,
+      "eligibleTasks": 28,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 95.9,
+        "reliability": 95.60000000000001,
+        "efficiency": 94.4,
+        "costEfficiency": 94.60000000000001,
+        "verifiedFeedback": 95.7
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "bundle_data_cleaning": {
+      "teamId": "bundle_data_cleaning",
+      "teamName": "Data Cleaning & Analytics Factory",
+      "category": "Data Quality & Normalization",
+      "completedBundles": 58,
+      "rawScores": {
+        "quality": 98.1,
+        "reliability": 97.8,
+        "efficiency": 96.6,
+        "costEfficiency": 96.8,
+        "verifiedFeedback": 97.89999999999999
+      },
+      "version": "1.0.0",
+      "baseScore": 97.58,
+      "confidence": 1,
+      "adjustedScore": 97.58,
+      "eligibleTasks": 58,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 98.1,
+        "reliability": 97.8,
+        "efficiency": 96.6,
+        "costEfficiency": 96.8,
+        "verifiedFeedback": 97.89999999999999
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "bundle_aiml_pipeline": {
+      "teamId": "bundle_aiml_pipeline",
+      "teamName": "AI/ML Model Development Pipeline",
+      "category": "Machine Learning Engineering",
+      "completedBundles": 19,
+      "rawScores": {
+        "quality": 90,
+        "reliability": 89.7,
+        "efficiency": 88.5,
+        "costEfficiency": 88.7,
+        "verifiedFeedback": 89.8
+      },
+      "version": "1.0.0",
+      "baseScore": 89.48,
+      "confidence": 1,
+      "adjustedScore": 89.48,
+      "eligibleTasks": 19,
+      "tier": "Gold",
+      "tierBadge": "GOLD TIER",
+      "tierColor": "#14F195",
+      "componentScores": {
+        "quality": 90,
+        "reliability": 89.7,
+        "efficiency": 88.5,
+        "costEfficiency": 88.7,
+        "verifiedFeedback": 89.8
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "bundle_cyber_audit": {
+      "teamId": "bundle_cyber_audit",
+      "teamName": "Cybersecurity & Smart Contract Audit",
+      "category": "Smart Contract & Infrastructure Security",
+      "completedBundles": 64,
+      "rawScores": {
+        "quality": 98.6,
+        "reliability": 98.3,
+        "efficiency": 97.1,
+        "costEfficiency": 97.3,
+        "verifiedFeedback": 98.39999999999999
+      },
+      "version": "1.0.0",
+      "baseScore": 98.08,
+      "confidence": 1,
+      "adjustedScore": 98.08,
+      "eligibleTasks": 64,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 98.6,
+        "reliability": 98.3,
+        "efficiency": 97.1,
+        "costEfficiency": 97.3,
+        "verifiedFeedback": 98.39999999999999
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "bundle_biz_research": {
+      "teamId": "bundle_biz_research",
+      "teamName": "Business Research & Market Intelligence",
+      "category": "Market Research & Competitive Intelligence",
+      "completedBundles": 16,
+      "rawScores": {
+        "quality": 89.4,
+        "reliability": 89.10000000000001,
+        "efficiency": 87.9,
+        "costEfficiency": 88.10000000000001,
+        "verifiedFeedback": 89.2
+      },
+      "version": "1.0.0",
+      "baseScore": 88.89,
+      "confidence": 1,
+      "adjustedScore": 88.89,
+      "eligibleTasks": 16,
+      "tier": "Gold",
+      "tierBadge": "GOLD TIER",
+      "tierColor": "#14F195",
+      "componentScores": {
+        "quality": 89.4,
+        "reliability": 89.10000000000001,
+        "efficiency": 87.9,
+        "costEfficiency": 88.10000000000001,
+        "verifiedFeedback": 89.2
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "bundle_content_marketing": {
+      "teamId": "bundle_content_marketing",
+      "teamName": "Content & Digital Marketing Engine",
+      "category": "Campaign Strategy & Content Creation",
+      "completedBundles": 14,
+      "rawScores": {
+        "quality": 87.7,
+        "reliability": 87.4,
+        "efficiency": 86.2,
+        "costEfficiency": 86.4,
+        "verifiedFeedback": 87.5
+      },
+      "version": "1.0.0",
+      "baseScore": 87.19,
+      "confidence": 1,
+      "adjustedScore": 87.19,
+      "eligibleTasks": 14,
+      "tier": "Gold",
+      "tierBadge": "GOLD TIER",
+      "tierColor": "#14F195",
+      "componentScores": {
+        "quality": 87.7,
+        "reliability": 87.4,
+        "efficiency": 86.2,
+        "costEfficiency": 86.4,
+        "verifiedFeedback": 87.5
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    }
+  },
+  "agentTrustRanks": {
+    "agent_webdev_00": {
+      "agentId": "agent_webdev_00",
+      "name": "WebCraft AI",
+      "category": "Web & UI Engineering",
+      "completedTasks": 58,
+      "rawScores": {
+        "quality": 96.5,
+        "reliability": 98,
+        "efficiency": 94,
+        "costEfficiency": 92.5,
+        "verifiedFeedback": 97
+      },
+      "version": "1.0.0",
+      "baseScore": 95.95,
+      "confidence": 1,
+      "adjustedScore": 95.95,
+      "eligibleTasks": 58,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 96.5,
+        "reliability": 98,
+        "efficiency": 94,
+        "costEfficiency": 92.5,
+        "verifiedFeedback": 97
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "agent_code_01": {
+      "agentId": "agent_code_01",
+      "name": "SolGuard AI",
+      "category": "Code & Security",
+      "completedTasks": 42,
+      "rawScores": {
+        "quality": 98.2,
+        "reliability": 97.5,
+        "efficiency": 95,
+        "costEfficiency": 93,
+        "verifiedFeedback": 96.5
+      },
+      "version": "1.0.0",
+      "baseScore": 96.6,
+      "confidence": 1,
+      "adjustedScore": 96.6,
+      "eligibleTasks": 42,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 98.2,
+        "reliability": 97.5,
+        "efficiency": 95,
+        "costEfficiency": 93,
+        "verifiedFeedback": 96.5
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "agent_backtest_02": {
+      "agentId": "agent_backtest_02",
+      "name": "FlashArb AI",
+      "category": "Trading & Arb",
+      "completedTasks": 35,
+      "rawScores": {
+        "quality": 92,
+        "reliability": 94.5,
+        "efficiency": 96,
+        "costEfficiency": 89,
+        "verifiedFeedback": 93
+      },
+      "version": "1.0.0",
+      "baseScore": 92.87,
+      "confidence": 1,
+      "adjustedScore": 92.87,
+      "eligibleTasks": 35,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 92,
+        "reliability": 94.5,
+        "efficiency": 96,
+        "costEfficiency": 89,
+        "verifiedFeedback": 93
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "agent_research_03": {
+      "agentId": "agent_research_03",
+      "name": "Helium Synth AI",
+      "category": "Research & DePIN",
+      "completedTasks": 21,
+      "rawScores": {
+        "quality": 90,
+        "reliability": 91,
+        "efficiency": 93,
+        "costEfficiency": 90.5,
+        "verifiedFeedback": 89
+      },
+      "version": "1.0.0",
+      "baseScore": 90.68,
+      "confidence": 1,
+      "adjustedScore": 90.68,
+      "eligibleTasks": 21,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 90,
+        "reliability": 91,
+        "efficiency": 93,
+        "costEfficiency": 90.5,
+        "verifiedFeedback": 89
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    },
+    "agent_dataforge_04": {
+      "agentId": "agent_dataforge_04",
+      "name": "DataForge AI",
+      "category": "Data Engineering",
+      "completedTasks": 27,
+      "rawScores": {
+        "quality": 97.2,
+        "reliability": 98,
+        "efficiency": 95.5,
+        "costEfficiency": 96,
+        "verifiedFeedback": 98
+      },
+      "version": "1.0.0",
+      "baseScore": 97.05,
+      "confidence": 1,
+      "adjustedScore": 97.05,
+      "eligibleTasks": 27,
+      "tier": "Platinum",
+      "tierBadge": "PLATINUM TIER",
+      "tierColor": "#00F0FF",
+      "componentScores": {
+        "quality": 97.2,
+        "reliability": 98,
+        "efficiency": 95.5,
+        "costEfficiency": 96,
+        "verifiedFeedback": 98
+      },
+      "isHighConfidence": true,
+      "hasSufficientEvidence": true,
+      "calculatedAt": "2026-10-27T08:58:44.602Z"
+    }
+  }
 }

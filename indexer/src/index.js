@@ -11,6 +11,27 @@ const crypto = require('crypto');
 const PORT = process.env.PORT || 4001;
 const DATA_FILE = path.join(__dirname, '..', 'data', 'store.json');
 
+// Import Agent Teams & TrustRank Engine modules
+const { PREBUILT_BUNDLES } = require('./bundleCatalog');
+const {
+  TRUSTRANK_CONFIG,
+  calculateBaseTrustRank,
+  calculateConfidence,
+  calculateAdjustedTrustRank,
+  determineTier,
+  evaluateTrustRank
+} = require('./trustRankEngine');
+const {
+  BUNDLE_STATES,
+  CHILD_STATES,
+  LAMPORTS_PER_SOL,
+  isValidTransition,
+  validateTeamConfig,
+  detectCircularDependencies,
+  calculateTeamFinancials
+} = require('./agentTeamOrchestrator');
+const { BundleExecutionEngine } = require('./bundleExecutionEngine');
+
 // Real Solana Devnet Connection
 const DEVNET_RPC = 'https://api.devnet.solana.com';
 const connection = new web3.Connection(DEVNET_RPC, 'confirmed');
@@ -412,6 +433,91 @@ function broadcast(eventType, data) {
     }
   });
 }
+
+// Ensure state structures for Agent Teams & TrustRank exist
+if (!state.bundles || state.bundles.length === 0) {
+  state.bundles = PREBUILT_BUNDLES;
+}
+if (!state.bundleTasks) {
+  state.bundleTasks = [];
+}
+if (!state.bundleEvents) {
+  state.bundleEvents = [];
+}
+if (!state.teamTrustRanks) {
+  state.teamTrustRanks = {};
+  PREBUILT_BUNDLES.forEach(b => {
+    state.teamTrustRanks[b.id] = {
+      teamId: b.id,
+      teamName: b.name,
+      category: b.category,
+      completedBundles: b.completedTasks,
+      rawScores: {
+        quality: b.trustRank + 0.5,
+        reliability: b.trustRank + 0.2,
+        efficiency: b.trustRank - 1.0,
+        costEfficiency: b.trustRank - 0.8,
+        verifiedFeedback: b.trustRank + 0.3
+      },
+      ...evaluateTrustRank({
+        quality: b.trustRank + 0.5,
+        reliability: b.trustRank + 0.2,
+        efficiency: b.trustRank - 1.0,
+        costEfficiency: b.trustRank - 0.8,
+        verifiedFeedback: b.trustRank + 0.3
+      }, b.completedTasks)
+    };
+  });
+}
+
+// Individual agent TrustRank baseline initialization
+if (!state.agentTrustRanks) {
+  state.agentTrustRanks = {
+    agent_webdev_00: {
+      agentId: "agent_webdev_00",
+      name: "WebCraft AI",
+      category: "Web & UI Engineering",
+      completedTasks: 58,
+      rawScores: { quality: 96.5, reliability: 98.0, efficiency: 94.0, costEfficiency: 92.5, verifiedFeedback: 97.0 },
+      ...evaluateTrustRank({ quality: 96.5, reliability: 98.0, efficiency: 94.0, costEfficiency: 92.5, verifiedFeedback: 97.0 }, 58)
+    },
+    agent_code_01: {
+      agentId: "agent_code_01",
+      name: "SolGuard AI",
+      category: "Code & Security",
+      completedTasks: 42,
+      rawScores: { quality: 98.2, reliability: 97.5, efficiency: 95.0, costEfficiency: 93.0, verifiedFeedback: 96.5 },
+      ...evaluateTrustRank({ quality: 98.2, reliability: 97.5, efficiency: 95.0, costEfficiency: 93.0, verifiedFeedback: 96.5 }, 42)
+    },
+    agent_backtest_02: {
+      agentId: "agent_backtest_02",
+      name: "FlashArb AI",
+      category: "Trading & Arb",
+      completedTasks: 35,
+      rawScores: { quality: 92.0, reliability: 94.5, efficiency: 96.0, costEfficiency: 89.0, verifiedFeedback: 93.0 },
+      ...evaluateTrustRank({ quality: 92.0, reliability: 94.5, efficiency: 96.0, costEfficiency: 89.0, verifiedFeedback: 93.0 }, 35)
+    },
+    agent_research_03: {
+      agentId: "agent_research_03",
+      name: "Helium Synth AI",
+      category: "Research & DePIN",
+      completedTasks: 21,
+      rawScores: { quality: 90.0, reliability: 91.0, efficiency: 93.0, costEfficiency: 90.5, verifiedFeedback: 89.0 },
+      ...evaluateTrustRank({ quality: 90.0, reliability: 91.0, efficiency: 93.0, costEfficiency: 90.5, verifiedFeedback: 89.0 }, 21)
+    },
+    agent_dataforge_04: {
+      agentId: "agent_dataforge_04",
+      name: "DataForge AI",
+      category: "Data Engineering",
+      completedTasks: 27,
+      rawScores: { quality: 97.2, reliability: 98.0, efficiency: 95.5, costEfficiency: 96.0, verifiedFeedback: 98.0 },
+      ...evaluateTrustRank({ quality: 97.2, reliability: 98.0, efficiency: 95.5, costEfficiency: 96.0, verifiedFeedback: 98.0 }, 27)
+    }
+  };
+}
+
+// Instantiate Bundle Execution Engine
+const bundleExecutionEngine = new BundleExecutionEngine(state, broadcast, saveState);
 
 // Fetch real Solana Devnet state periodically
 async function updateSolanaDevnetInfo() {
@@ -1209,6 +1315,399 @@ app.post('/api/demo/run-autonomous-flow', async (req, res) => {
       body: JSON.stringify({ taskId, agentId: chosenAgent.id })
     }).catch(e => console.error("Auto eval error:", e.message));
   }, 1000);
+});
+
+// ==============================================================================
+// AGENT TEAMS, BUNDLES & TRUSTRANK REST API ENDPOINTS
+// ==============================================================================
+
+// 1. Get all prebuilt & custom bundles
+app.get('/api/bundles', (req, res) => {
+  const bundlesWithRanks = (state.bundles || []).map(b => {
+    const rankInfo = state.teamTrustRanks?.[b.id] || {
+      adjustedScore: b.trustRank || 90.0,
+      confidence: b.confidence || 0.85,
+      tier: b.tier || "Gold",
+      tierBadge: `${(b.tier || "Gold").toUpperCase()} TIER`,
+      eligibleTasks: b.completedTasks || 20
+    };
+    return {
+      ...b,
+      trustRank: rankInfo.adjustedScore,
+      confidence: rankInfo.confidence,
+      tier: rankInfo.tier,
+      tierBadge: rankInfo.tierBadge,
+      completedTasks: rankInfo.eligibleTasks
+    };
+  });
+  res.json(bundlesWithRanks);
+});
+
+// 2. Get single bundle details
+app.get('/api/bundles/:id', (req, res) => {
+  const bundle = (state.bundles || []).find(b => b.id === req.params.id);
+  if (!bundle) return res.status(404).json({ error: "Bundle not found" });
+
+  const rankInfo = state.teamTrustRanks?.[bundle.id] || null;
+  res.json({
+    ...bundle,
+    trustRankProfile: rankInfo
+  });
+});
+
+// 3. Validate & Price a Team Configuration (pre-funding)
+app.post('/api/bundles/validate-and-price', (req, res) => {
+  try {
+    const { agents, userMaxBudgetSol, marketplaceFeePercent = 0 } = req.body;
+
+    const validation = validateTeamConfig({ agents });
+    if (!validation.valid) {
+      return res.status(400).json({ error: "Invalid team configuration", details: validation.errors });
+    }
+
+    const cycleCheck = detectCircularDependencies(agents);
+    if (cycleCheck.hasCycle) {
+      return res.status(400).json({ error: "Dependency cycle detected", details: cycleCheck.error });
+    }
+
+    const financials = calculateTeamFinancials(agents, userMaxBudgetSol, marketplaceFeePercent);
+
+    res.json({
+      valid: true,
+      executionOrder: cycleCheck.executionOrder,
+      financials
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 4. Create & Fund a Bundle Task (Dual-Vault PDA Model)
+app.post('/api/bundle-tasks', (req, res) => {
+  try {
+    const {
+      title,
+      teamId,
+      teamName,
+      category = "Software Development",
+      agents,
+      userMaxBudgetSol = null,
+      requirements = ""
+    } = req.body;
+
+    const validation = validateTeamConfig({ agents });
+    if (!validation.valid) {
+      return res.status(400).json({ error: "Validation failed", details: validation.errors });
+    }
+
+    const cycleCheck = detectCircularDependencies(agents);
+    if (cycleCheck.hasCycle) {
+      return res.status(400).json({ error: cycleCheck.error });
+    }
+
+    const financials = calculateTeamFinancials(agents, userMaxBudgetSol);
+    if (!financials.isWithinBudget) {
+      return res.status(400).json({ error: financials.budgetWarning });
+    }
+
+    // Verify poster wallet balance on Devnet
+    const requiredSol = financials.grandTotalSol;
+    if (state.wallets.poster.sol_balance < requiredSol) {
+      state.wallets.poster.sol_balance += Math.ceil(requiredSol + 5); // Faucet assist for seamless demo
+    }
+
+    // Deduct SOL from Poster Wallet into Parent Escrow PDA
+    state.wallets.poster.sol_balance = Number((state.wallets.poster.sol_balance - requiredSol).toFixed(4));
+
+    const bundleTaskId = `bundle_task_${Date.now()}`;
+    const parentEscrowPda = "EscrowPDA_" + crypto.createHash('sha256').update(bundleTaskId).digest('hex').slice(0, 32);
+
+    // Create child tasks for every agent
+    const childTasks = agents.map((agent, idx) => {
+      return {
+        id: `child_${bundleTaskId}_${idx}`,
+        parentTaskId: bundleTaskId,
+        agentId: agent.agentId,
+        name: agent.name || agent.agentId,
+        role: agent.role,
+        responsibilities: agent.responsibilities,
+        dependencies: agent.dependencies || [],
+        status: (agent.dependencies && agent.dependencies.length > 0) ? CHILD_STATES.WAITING_DEPS : CHILD_STATES.PENDING,
+        laborAllocationSol: Number(agent.laborSol || 0),
+        computeAllocationSol: Number(agent.computeSol || 0),
+        actualComputeSol: 0,
+        deliverableReference: null,
+        deliverableHash: null,
+        createdAt: new Date().toISOString()
+      };
+    });
+
+    const newBundleTask = {
+      id: bundleTaskId,
+      title: title || `Autonomous Team Task: ${teamName}`,
+      teamId: teamId || `team_${Date.now()}`,
+      teamName: teamName || "Custom Multi-Agent Team",
+      category,
+      requirements,
+      poster: posterKeypair.publicKey.toBase58(),
+      parentEscrowPda,
+      status: BUNDLE_STATES.FUNDED,
+      agents,
+      childTasks,
+      totalLaborSol: financials.laborSubtotalSol,
+      totalComputeSol: financials.computeSubtotalSol,
+      grandTotalSol: financials.grandTotalSol,
+      financials,
+      actualComputeSol: 0,
+      unspentRefundSol: 0,
+      createdAt: new Date().toISOString()
+    };
+
+    if (!state.bundleTasks) state.bundleTasks = [];
+    state.bundleTasks.unshift(newBundleTask);
+    saveState();
+
+    broadcast("BUNDLE_TASK_CREATED", newBundleTask);
+    broadcast("WALLET_UPDATED", state.wallets);
+
+    res.status(201).json(newBundleTask);
+  } catch (err) {
+    console.error("Create bundle task error:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 5. Get all Bundle Tasks
+app.get('/api/bundle-tasks', (req, res) => {
+  res.json(state.bundleTasks || []);
+});
+
+// 6. Get single Bundle Task with live telemetry
+app.get('/api/bundle-tasks/:id', (req, res) => {
+  const task = (state.bundleTasks || []).find(t => t.id === req.params.id);
+  if (!task) return res.status(404).json({ error: "Bundle task not found" });
+
+  const events = (state.bundleEvents || []).filter(e => e.bundleTaskId === req.params.id);
+  res.json({
+    ...task,
+    events
+  });
+});
+
+// 7. Execute a Bundle Task (Start Orchestrator)
+app.post('/api/bundle-tasks/:id/execute', async (req, res) => {
+  try {
+    const task = (state.bundleTasks || []).find(t => t.id === req.params.id);
+    if (!task) return res.status(404).json({ error: "Bundle task not found" });
+
+    if (task.status === BUNDLE_STATES.RUNNING || task.status === BUNDLE_STATES.COMPLETED) {
+      return res.status(400).json({ error: `Task is already in state: ${task.status}` });
+    }
+
+    res.json({ message: "Bundle task execution launched", bundleTaskId: task.id });
+
+    // Execute asynchronously via BundleExecutionEngine
+    bundleExecutionEngine.executeBundleTask(task.id).catch(err => {
+      console.error(`Bundle Task #${task.id} execution error:`, err);
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 8. Stream Execution Events for a Bundle Task (SSE)
+app.get('/api/bundle-tasks/:id/events', (req, res) => {
+  const bundleTaskId = req.params.id;
+
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+
+  // Send historical events
+  const pastEvents = (state.bundleEvents || []).filter(e => e.bundleTaskId === bundleTaskId);
+  pastEvents.forEach(evt => {
+    res.write(`data: ${JSON.stringify(evt)}\n\n`);
+  });
+
+  // Listen for new events
+  const onEvent = (event) => {
+    if (event.bundleTaskId === bundleTaskId) {
+      res.write(`data: ${JSON.stringify(event)}\n\n`);
+    }
+  };
+
+  // Keep alive ping
+  const interval = setInterval(() => {
+    res.write(': ping\n\n');
+  }, 15000);
+
+  req.on('close', () => {
+    clearInterval(interval);
+  });
+});
+
+// 9. TrustRank Leaderboard: Individual Agents
+app.get('/api/rankings/agents', (req, res) => {
+  const { category, tier, sortBy = "adjustedScore" } = req.query;
+
+  let list = Object.values(state.agentTrustRanks || {});
+
+  if (category && category !== 'All') {
+    list = list.filter(a => a.category?.toLowerCase().includes(category.toLowerCase()));
+  }
+
+  if (tier && tier !== 'All') {
+    list = list.filter(a => a.tier?.toLowerCase() === tier.toLowerCase());
+  }
+
+  // Sort descending
+  list.sort((a, b) => (b[sortBy] ?? 0) - (a[sortBy] ?? 0));
+
+  res.json({
+    formulaVersion: TRUSTRANK_CONFIG.version,
+    weights: TRUSTRANK_CONFIG.weights,
+    confidenceConfig: TRUSTRANK_CONFIG.confidence,
+    agents: list
+  });
+});
+
+// 10. TrustRank Leaderboard: Multi-Agent Teams & Bundles
+app.get('/api/rankings/teams', (req, res) => {
+  const { category, tier, sortBy = "adjustedScore" } = req.query;
+
+  let list = Object.values(state.teamTrustRanks || {});
+
+  if (category && category !== 'All') {
+    list = list.filter(t => t.category?.toLowerCase().includes(category.toLowerCase()));
+  }
+
+  if (tier && tier !== 'All') {
+    list = list.filter(t => t.tier?.toLowerCase() === tier.toLowerCase());
+  }
+
+  // Sort descending
+  list.sort((a, b) => (b[sortBy] ?? 0) - (a[sortBy] ?? 0));
+
+  res.json({
+    formulaVersion: TRUSTRANK_CONFIG.version,
+    weights: TRUSTRANK_CONFIG.weights,
+    confidenceConfig: TRUSTRANK_CONFIG.confidence,
+    teams: list
+  });
+});
+
+// 11. TrustRank Methodology & Config Explanation
+app.get('/api/rankings/methodology', (req, res) => {
+  res.json({
+    framework: "SolHire TrustRank Multi-Agent & Single-Agent Mathematical Model",
+    version: TRUSTRANK_CONFIG.version,
+    dimensions: [
+      { name: "Accuracy & Quality", weight: "35%", description: "Verified test pass rates, AST correctness, schema validation, and held-out metrics" },
+      { name: "Reliability", weight: "25%", description: "Completed vs failed task ratio, timeout rate, and retry frequency" },
+      { name: "Execution Efficiency", weight: "15%", description: "Actual completion duration relative to estimated SLA, zero avoidable rework" },
+      { name: "Cost Efficiency", weight: "15%", description: "Actual compute & labor expenditure relative to budget, unused funds returned" },
+      { name: "Verified User Feedback", weight: "10%", description: "Sybil-resistant feedback from settled tasks (self-reviews strictly excluded)" }
+    ],
+    confidenceMechanism: {
+      formula: "AdjustedTrustRank = Confidence * BaseScore + (1 - Confidence) * PriorScore",
+      priorScore: TRUSTRANK_CONFIG.confidence.priorScore,
+      evidenceThreshold: TRUSTRANK_CONFIG.confidence.threshold,
+      minimumEligibleTasks: TRUSTRANK_CONFIG.confidence.minEligibleTasks,
+      tierCutoffs: TRUSTRANK_CONFIG.tiers
+    }
+  });
+});
+
+// 12. Task & Team Recommendation Engine
+app.post('/api/tasks/recommendations', (req, res) => {
+  const { prompt = "", budgetLimitSol = null } = req.body;
+  const p = prompt.toLowerCase();
+
+  // Evaluate prebuilt bundles
+  const teamRecommendations = (state.bundles || []).map(bundle => {
+    let matchScore = 65;
+    let matchingReasons = [];
+    let coverageGaps = [];
+
+    if (p.includes("web") || p.includes("app") || p.includes("ecommerce") || p.includes("store") || p.includes("fullstack")) {
+      if (bundle.id === "bundle_fullstack_app") { matchScore = 98; matchingReasons.push("Matches full-stack frontend, backend, database, and QA requirements"); }
+    }
+    if (p.includes("clean") || p.includes("data") || p.includes("dataset") || p.includes("normalize") || p.includes("outlier")) {
+      if (bundle.id === "bundle_data_cleaning") { matchScore = 99; matchingReasons.push("Matches 8-stage data cleaning, deduplication, and quality scoring"); }
+    }
+    if (p.includes("audit") || p.includes("security") || p.includes("vulnerability") || p.includes("anchor") || p.includes("contract")) {
+      if (bundle.id === "bundle_cyber_audit") { matchScore = 99; matchingReasons.push("Matches Anchor smart contract review, PDA bump checks, and Wasm AST fuzzing"); }
+    }
+    if (p.includes("defi") || p.includes("risk") || p.includes("arbitrage") || p.includes("pool") || p.includes("liquidity")) {
+      if (bundle.id === "bundle_defi_risk") { matchScore = 96; matchingReasons.push("Matches on-chain liquidity scanning, slippage modeling, and risk bounds"); }
+    }
+    if (p.includes("health") || p.includes("patient") || p.includes("clinical") || p.includes("medical")) {
+      if (bundle.id === "bundle_healthcare_intel") { matchScore = 97; matchingReasons.push("Matches synthetic patient data sanitation, FHIR schema validation, and biostatistics"); }
+    }
+    if (p.includes("ml") || p.includes("model") || p.includes("ai") || p.includes("train") || p.includes("predict")) {
+      if (bundle.id === "bundle_aiml_pipeline") { matchScore = 95; matchingReasons.push("Matches leak-free data preparation, feature engineering, and held-out cross-validation"); }
+    }
+    if (p.includes("research") || p.includes("market") || p.includes("business") || p.includes("competitor")) {
+      if (bundle.id === "bundle_biz_research") { matchScore = 94; matchingReasons.push("Matches evidence collection, TAM/SAM sizing, and independent fact-checking"); }
+    }
+    if (p.includes("marketing") || p.includes("campaign") || p.includes("content") || p.includes("seo") || p.includes("copy")) {
+      if (bundle.id === "bundle_content_marketing") { matchScore = 93; matchingReasons.push("Matches audience persona modeling, multi-channel copy generation, and SEO review"); }
+    }
+
+    const rankInfo = state.teamTrustRanks?.[bundle.id] || { adjustedScore: bundle.trustRank || 90 };
+    const budgetOk = budgetLimitSol ? bundle.totalEstimatedSol <= Number(budgetLimitSol) : true;
+
+    return {
+      type: "TEAM_BUNDLE",
+      id: bundle.id,
+      name: bundle.name,
+      industry: bundle.industry,
+      matchScore,
+      trustRank: rankInfo.adjustedScore,
+      agentCount: bundle.agentCount,
+      agents: bundle.agents.map(a => ({ name: a.name, role: a.role, laborSol: a.laborSol })),
+      totalEstimatedSol: bundle.totalEstimatedSol,
+      estimatedDuration: bundle.estimatedDuration,
+      budgetCompatible: budgetOk,
+      matchingReasons: matchingReasons.length > 0 ? matchingReasons : ["General capability alignment across multi-agent workflow"],
+      coverageGaps: coverageGaps
+    };
+  });
+
+  // Evaluate single agents
+  const singleAgentRecommendations = (state.agents || []).map(agent => {
+    let matchScore = 60;
+    const n = agent.name.toLowerCase();
+    const c = (agent.category || "").toLowerCase();
+
+    if ((p.includes("web") || p.includes("ui") || p.includes("frontend")) && agent.id === 'agent_webdev_00') matchScore = 92;
+    if ((p.includes("audit") || p.includes("security") || p.includes("rust")) && agent.id === 'agent_code_01') matchScore = 95;
+    if ((p.includes("data") || p.includes("clean")) && agent.id === 'agent_dataforge_04') matchScore = 94;
+    if ((p.includes("arb") || p.includes("trade")) && agent.id === 'agent_backtest_02') matchScore = 90;
+
+    const rank = state.agentTrustRanks?.[agent.id] || { adjustedScore: 90 };
+    return {
+      type: "SINGLE_AGENT",
+      id: agent.id,
+      name: agent.name,
+      category: agent.category,
+      matchScore,
+      trustRank: rank.adjustedScore,
+      totalEstimatedSol: Number(agent.rate_sol || 1.0) + 0.1,
+      estimatedDuration: "15 seconds",
+      note: "Recommended for targeted single-responsibility tasks only."
+    };
+  });
+
+  // Sort both by matchScore descending
+  teamRecommendations.sort((a, b) => b.matchScore - a.matchScore);
+  singleAgentRecommendations.sort((a, b) => b.matchScore - a.matchScore);
+
+  res.json({
+    prompt,
+    recommendedTeams: teamRecommendations.slice(0, 3),
+    recommendedSingleAgents: singleAgentRecommendations.slice(0, 2)
+  });
 });
 
 server.listen(PORT, () => {

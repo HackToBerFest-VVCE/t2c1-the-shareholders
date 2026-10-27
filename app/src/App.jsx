@@ -9,9 +9,13 @@ import CreateTaskModal from './components/CreateTaskModal';
 import DemoRunnerBanner from './components/DemoRunnerBanner';
 import DeployAgentModal from './components/DeployAgentModal';
 import UserRequirementsAgentHub from './components/UserRequirementsAgentHub';
+import AgentTeamsMarketplace from './components/AgentTeamsMarketplace';
+import CustomTeamBuilder from './components/CustomTeamBuilder';
+import TeamExecutionDashboard from './components/TeamExecutionDashboard';
+import TrustRankLeaderboard from './components/TrustRankLeaderboard';
 import { 
   Bot, ShieldCheck, Activity, Layers, Terminal, Sparkles, 
-  ExternalLink, Code2, AlertTriangle, ArrowUpRight, Play, CheckCircle2, History
+  ExternalLink, Code2, AlertTriangle, ArrowUpRight, Play, CheckCircle2, History, Users, Shield, Plus
 } from 'lucide-react';
 
 const API_BASE = 'http://localhost:4001';
@@ -36,6 +40,8 @@ export default function App() {
   const [isEvaluating, setIsEvaluating] = useState(false);
   const [latestSettlement, setLatestSettlement] = useState(null);
   const [gatewayStatus, setGatewayStatus] = useState(null);
+  const [activeBundleTask, setActiveBundleTask] = useState(null);
+  const [isCustomBuilderOpen, setIsCustomBuilderOpen] = useState(false);
 
   // Initial Fetch
   const loadData = async () => {
@@ -280,6 +286,51 @@ export default function App() {
           </button>
 
           <button
+            onClick={() => setActiveTab('teams')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
+              activeTab === 'teams'
+                ? 'bg-gradient-to-r from-[#9945FF]/40 to-[#00F0FF]/40 text-white border border-[#00F0FF]/50 shadow-lg shadow-[#00F0FF]/10'
+                : 'text-slate-400 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <Users className="w-4 h-4 text-[#00F0FF]" />
+            <span>Agent Teams & Bundles</span>
+            <span className="badge-tag bg-[#00F0FF]/20 text-[#00F0FF] text-[10px] font-bold">
+              8 PREBUILT
+            </span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('team-execution')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
+              activeTab === 'team-execution'
+                ? 'bg-gradient-to-r from-[#00F0FF]/30 to-[#14F195]/30 text-white border border-[#14F195]/40 shadow-lg'
+                : 'text-slate-400 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <Layers className="w-4 h-4 text-[#14F195]" />
+            <span>Team Execution & DAG</span>
+            {activeBundleTask && (
+              <span className="w-2 h-2 rounded-full bg-[#14F195] animate-ping" />
+            )}
+          </button>
+
+          <button
+            onClick={() => setActiveTab('trustrank')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
+              activeTab === 'trustrank'
+                ? 'bg-gradient-to-r from-[#9945FF]/40 to-[#14F195]/40 text-white border border-[#14F195]/50 shadow-lg'
+                : 'text-slate-400 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <Shield className="w-4 h-4 text-[#14F195]" />
+            <span>TrustRank™ Leaderboards</span>
+            <span className="badge-tag bg-[#14F195]/20 text-[#14F195] text-[10px] font-bold">
+              REPUTATION
+            </span>
+          </button>
+
+          <button
             onClick={() => setActiveTab('evaluator')}
             className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center space-x-2 ${
               activeTab === 'evaluator'
@@ -288,7 +339,7 @@ export default function App() {
             }`}
           >
             <Terminal className="w-4 h-4 text-[#14F195]" />
-            <span>Agent Evaluator & Terminal</span>
+            <span>Single Agent Evaluator</span>
             {isEvaluating && (
               <span className="w-2 h-2 rounded-full bg-[#14F195] animate-ping" />
             )}
@@ -374,6 +425,50 @@ export default function App() {
               onRunEvaluation={handleRunEvaluation}
               onNavigateTab={setActiveTab}
             />
+          </div>
+        )}
+
+        {/* Tab: Agent Teams & Bundles Marketplace */}
+        {activeTab === 'teams' && (
+          <div className="space-y-6">
+            {isCustomBuilderOpen ? (
+              <CustomTeamBuilder
+                availableAgents={agents}
+                userBalanceSol={wallets?.poster?.sol_balance || 15.5}
+                onCancel={() => setIsCustomBuilderOpen(false)}
+                onTeamCreated={(bundleTask) => {
+                  setIsCustomBuilderOpen(false);
+                  setActiveBundleTask(bundleTask);
+                  setActiveTab('team-execution');
+                }}
+              />
+            ) : (
+              <AgentTeamsMarketplace
+                userBalanceSol={wallets?.poster?.sol_balance || 15.5}
+                onOpenTeamBuilder={() => setIsCustomBuilderOpen(true)}
+                onSelectBundleToRun={(bundleTask) => {
+                  setActiveBundleTask(bundleTask);
+                  setActiveTab('team-execution');
+                }}
+              />
+            )}
+          </div>
+        )}
+
+        {/* Tab: Team Execution Dashboard & Live DAG Telemetry */}
+        {activeTab === 'team-execution' && (
+          <div className="space-y-6">
+            <TeamExecutionDashboard
+              initialBundleTask={activeBundleTask}
+              onOpenAnotherTeam={() => setActiveTab('teams')}
+            />
+          </div>
+        )}
+
+        {/* Tab: TrustRank Mathematical Leaderboards */}
+        {activeTab === 'trustrank' && (
+          <div className="space-y-6">
+            <TrustRankLeaderboard />
           </div>
         )}
 
